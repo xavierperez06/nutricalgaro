@@ -14,7 +14,7 @@ const Navbar = () => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
         setNavColor("#ffffff");
-        setNavTextColor("#000000");
+        setNavTextColor("#ebbf1a");
       } else {
         setNavColor("transparent");
         setNavTextColor("#ffffff");
@@ -31,20 +31,23 @@ const Navbar = () => {
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/" className="flex gap-2 flex-center">
           <Image
-            src={"/assets/images/Logo.png"}
+            src={"/assets/images/NutriLogo.png"}
             alt="Nutricalgaro Logo"
             width={50}
             height={50}
             className="object-contain"
           />
-          <div className="hidden sm:flex items-center">
+          <div
+            style={{ color: `${navTextColor}` }}
+            className="hidden sm:flex items-center md:text-xl"
+          >
             <p>Nutricalgaro</p>
           </div>
         </Link>
 
         <ul style={{ color: `${navTextColor}` }} className="hidden sm:flex">
           <li className="p-4">
-            <Link href="/">Home</Link>
+            <Link href="/">Inicio</Link>
           </li>
           <li className="p-4">
             <Link href="/#services">Servicios</Link>
