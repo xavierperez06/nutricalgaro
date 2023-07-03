@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import InstagramImage from "@/components/IntagramImage";
 import IGImg01 from "@/public/assets/images/Insta_Pic01.png";
 import IGImg02 from "@/public/assets/images/Insta_Pic02.png";
@@ -10,7 +12,13 @@ const Instagram = () => {
   return (
     <div className="max-w-[1240px] mx-auto text-center py-24">
       <p className="text-2xl font-bold text-main-color">Sigueme en Instagram</p>
-      <p className="pb-4">@nutricalgaro</p>
+      <Link
+        href="https://www.instagram.com/nutricalgaro/"
+        target="_blank"
+        className="pb-4"
+      >
+        @nutricalgaro
+      </Link>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4">
         <InstagramImage img={IGImg01} />
         <InstagramImage img={IGImg02} />
