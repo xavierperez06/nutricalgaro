@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ServiceCard = ({ title, description, img }) => {
   return (
-    <div className="flex justify-between max-w-screen-lg rounded-2xl shadow-lg hover:shadow-[#ebbf1a] sm:flex-col-reverse md:flex-col-reverse lg:flex-row ">
+    <div className="flex justify-between max-w-screen-lg rounded-2xl shadow-lg hover:shadow-[#ebbf1a] flex-col-reverse md:flex-col-reverse lg:flex-row ">
       <div className="text-left p-10 ">
         <h1 className="text-main-color font-bold text-5xl">{title}</h1>
         <p className="mt-8 ">{description}</p>
@@ -12,7 +12,7 @@ const ServiceCard = ({ title, description, img }) => {
           </button>
         </div>
       </div>
-      <div className="relative lg:w-full p-4">
+      <div className="relative lg:w-full p-4 flex justify-center md:flex md:justify-center lg:inline-block">
         <Image
           src={img}
           alt="/"
