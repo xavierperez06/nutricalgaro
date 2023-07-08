@@ -8,6 +8,7 @@ import ImgTalleres from "@/public/assets/images/Talleres.jpg";
 import Contact from "@/components/Contact";
 import ReviewSlider from "@/components/ReviewSlider";
 import { reviews } from "@/constants";
+import Map from "@/components/Map";
 
 export default function Home() {
   return (
@@ -45,17 +46,22 @@ export default function Home() {
         </section>
       </div>
       <section className="bg-[#FAE48D] h-[500px] flex flex-col justify-normal items-center mb-10">
-        <h1 className="text-5xl font-bold text-white my-10">
+        <h1 className="text-2xl font-bold text-white my-10 sm:text-5xl text-center">
           Amables palabras de mis pacientes
         </h1>
         <ReviewSlider slideInfo={reviews} />
       </section>
       <div className="flex flex-col self-center justify-center text-center items-center">
+        <Instagram />
         <section>
           <h1 className="text-5xl font-bold text-main-color m-10">Contacto</h1>
           <Contact />
+          <Map
+            latitude={-32.95714561109396}
+            longitude={-60.63709198858796}
+            zoom={15}
+          />
         </section>
-        <Instagram />
       </div>
     </main>
   );

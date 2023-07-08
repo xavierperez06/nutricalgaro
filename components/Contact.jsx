@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="max-w-[1240px] m-auto p-4">
+    <div className="max-w-[1240px] m-auto">
       <h1 className="text-2xl font-bold text-center p-4">
         Escribe tu consulta
       </h1>
