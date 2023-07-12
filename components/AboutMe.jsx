@@ -24,7 +24,7 @@ const AboutMe = () => {
             <span className="font-semibold text-main-color">
               Licenciada en Nutrición{" "}
             </span>
-            te enseño a crear hábitos.
+            y te ayudo a crear hábitos.
           </p>
         </div>
       </div>
