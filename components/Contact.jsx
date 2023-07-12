@@ -1,8 +1,44 @@
 "use client";
+import { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
+  const [sendingEmail, setSendingEmail] = useState(false);
+
+  const notity = (type) => {
+    if (type === "success") {
+      toast.success("Mensaje enviado con éxito.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    } else if (type === "error") {
+      toast.error(
+        "Ocurrió un error al enviar el mensaje. Por favor prueba más tarde.",
+        {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        }
+      );
+    }
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    setSendingEmail(true);
 
     const data = {
       fullname: event.target.fullname.value,
@@ -11,7 +47,7 @@ const Contact = () => {
       message: event.target.message.value,
     };
 
-    const response = await fetch("api/contact", {
+    await fetch("api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -19,11 +55,16 @@ const Contact = () => {
       body: JSON.stringify(data),
     })
       .then((result) => {
-        console.log(result);
-        console.log("Message sent successfully");
+        notity("success");
+        console.log("Mensaje enviado con éxito.");
       })
       .catch((error) => {
+        notity("error");
         console.log(error);
+      })
+      .finally(() => {
+        setSendingEmail(false);
+        event.target.reset();
       });
   };
 
@@ -62,13 +103,17 @@ const Contact = () => {
           rows={10}
           placeholder="Mensaje"
         ></textarea>
-        <button
-          type="submit"
-          className="mt-2 text-white bg-[#ebbf1a] pt-2 pb-2 rounded-xl hover:bg-[#CDA616] ease-linear duration-300 w-full"
-        >
-          Enviar
-        </button>
+        <div>
+          <button
+            type="submit"
+            className="mt-2 text-white bg-[#ebbf1a] pt-2 pb-2 rounded-xl hover:bg-[#CDA616] ease-linear duration-300 w-full"
+            disabled={sendingEmail}
+          >
+            {sendingEmail ? "Enviando..." : "Enviar"}
+          </button>
+        </div>
       </form>
+      <ToastContainer autoClose={8000} />
     </div>
   );
 };
