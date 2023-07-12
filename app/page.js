@@ -5,6 +5,8 @@ import AboutMe from "@/components/AboutMe";
 
 import ImgRecetas from "@/public/assets/images/Recetas.jpg";
 import ImgTalleres from "@/public/assets/images/Talleres.jpg";
+import ImgOnline from "@/public/assets/images/AtencionOnline.jpg";
+import ImgPresencial from "@/public/assets/images/AtencionPresencial.jpg";
 import Contact from "@/components/Contact";
 import ReviewSlider from "@/components/ReviewSlider";
 import { reviews } from "@/constants";
@@ -35,12 +37,12 @@ export default function Home() {
             <ServiceCard
               title="Atención Online"
               description="Tu consultas también pueden ser por Whatsapp, Zoom, o Google Meets."
-              img={ImgRecetas}
+              img={ImgOnline}
             />
             <ServiceCard
               title="Atención Presencial"
               description="Talleres enfocado en mejorar tu alimentación de manera personalizada y rica."
-              img={ImgTalleres}
+              img={ImgPresencial}
             />
           </div>
         </section>

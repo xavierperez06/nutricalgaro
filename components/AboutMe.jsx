@@ -24,7 +24,7 @@ const AboutMe = () => {
             <span className="font-semibold text-main-color">
               Licenciada en Nutrición{" "}
             </span>
-            y tengo los cachetes más besables del planeta.
+            te enseño a crear hábitos.
           </p>
         </div>
       </div>

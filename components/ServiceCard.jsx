@@ -16,9 +16,7 @@ const ServiceCard = ({ title, description, img }) => {
         <Image
           src={img}
           alt="/"
-          width={270}
-          height={200}
-          className="rounded-2xl"
+          className="rounded-2xl object-cover h-48 w-96"
         />
       </div>
     </div>
