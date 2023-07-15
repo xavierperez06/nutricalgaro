@@ -1,4 +1,4 @@
-import Hero from "../components/Hero";
+import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import Instagram from "@/components/Instagram";
 import AboutMe from "@/components/AboutMe";
@@ -24,25 +24,30 @@ export default function Home() {
         <section id="services" className="max-w-screen-xl mb-20">
           <h1 className="text-5xl font-bold text-main-color m-10">Servicios</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 p-4 ">
+            {/* ToDo: create a json list  */}
             <ServiceCard
               title="Recetas"
               description="Las más ricas y sanas recetas que vas a encontrar en todo internet jeje"
               img={ImgRecetas}
+              path="/recetas"
             />
             <ServiceCard
               title="Talleres"
               description="Talleres enfocado en mejorar tu alimentación de manera personalizada y rica."
               img={ImgTalleres}
+              path="/talleres"
             />
             <ServiceCard
               title="Atención Online"
               description="Tu consultas también pueden ser por Whatsapp, Zoom, o Google Meets."
               img={ImgOnline}
+              path="/online"
             />
             <ServiceCard
               title="Atención Presencial"
               description="Talleres enfocado en mejorar tu alimentación de manera personalizada y rica."
               img={ImgPresencial}
+              path="/presencial"
             />
           </div>
         </section>

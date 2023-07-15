@@ -31,9 +31,9 @@ const wordAnimation = {
 
 const AnimatedText = ({ text, className = "" }) => {
   return (
-    <div className="w-full mx-auto py-2 flex items-center justify-center overflow-hidden">
+    <div className="py-2 flex items-center justify-center overflow-hidden">
       <motion.h1
-        className={`inline-block w-full text-black ${className}`}
+        className={`inline-block text-black ${className}`}
         variants={textAnimation}
         initial="initial"
         animate="animate"

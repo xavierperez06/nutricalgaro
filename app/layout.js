@@ -18,11 +18,7 @@ export default function RootLayout({ children }) {
         <div className="main">
           <div className="background" />
         </div>
-        <main className="app">
-          <Navbar />
-          {children}
-          <Footer />
-        </main>
+        <main className="app">{children}</main>
       </body>
     </html>
   );

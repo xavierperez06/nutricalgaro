@@ -5,28 +5,37 @@ import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-const Navbar = () => {
+const Navbar = ({ isHome = false }) => {
   const [nav, setNav] = useState(false);
   const [navColor, setNavColor] = useState("transparent");
   const [navTextColor, setNavTextColor] = useState("#ffffff");
 
   useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 90) {
-        setNavColor("#ffffff");
-        setNavTextColor("#ebbf1a");
-      } else {
-        setNavColor("transparent");
-        setNavTextColor("#ffffff");
-      }
-    };
-    window.addEventListener("scroll", changeColor);
+    if (isHome) {
+      const changeColor = () => {
+        if (window.scrollY >= 90) {
+          setNavColor("#ffffff");
+          setNavTextColor("#ebbf1a");
+        } else {
+          setNavColor("transparent");
+          setNavTextColor("#ffffff");
+        }
+      };
+      window.addEventListener("scroll", changeColor);
+    } else {
+      setNavColor("#ffffff");
+      setNavTextColor("#ebbf1a");
+    }
   }, []);
 
   return (
-    <div
+    <nav
       style={{ backgroundColor: `${navColor}` }}
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
+      className={
+        isHome
+          ? "fixed left-0 top-0 w-full z-10 ease-in duration-300"
+          : "left-0 top-0 w-full shadow-xl"
+      }
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/" className="flex gap-2 flex-center">
@@ -92,7 +101,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
