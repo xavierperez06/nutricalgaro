@@ -36,3 +36,34 @@ export const reviews = [
     description: "Los rulitos mas lindos",
   },
 ];
+
+export const services = [
+  {
+    title: "Recetas",
+    description:
+      "Las más ricas y sanas recetas que vas a encontrar en todo internet jeje",
+    img: "/assets/images/Recetas.jpg",
+    path: "/recetas",
+  },
+  {
+    title: "Talleres",
+    description:
+      "Talleres enfocado en mejorar tu alimentación de manera personalizada y rica.",
+    img: "/assets/images/Talleres.jpg",
+    path: "/talleres",
+  },
+  {
+    title: "Atención Online",
+    description:
+      "Tu consultas también pueden ser por Whatsapp, Zoom, o Google Meets.",
+    img: "/assets/images/AtencionOnline.jpg",
+    path: "/online",
+  },
+  {
+    title: "Atención Presencial",
+    description:
+      "Talleres enfocado en mejorar tu alimentación de manera personalizada y rica.",
+    img: "/assets/images/AtencionPresencial.jpg",
+    path: "/presencial",
+  },
+];

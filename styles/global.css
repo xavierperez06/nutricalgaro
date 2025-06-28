@@ -16,20 +16,26 @@
   }
 }
 
-body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-}
-
 .hero-img {
   background-image: url("https://plus.unsplash.com/premium_photo-1663852706030-fd31c3a51c32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
 }
 
 .text-main-color {
   color: #ebbf1a;
+}
+
+.yello-bg {
+  background-image: url("https://sosimplehealth.com/wp-content/uploads/2021/02/Laura-Stavely.png");
+  background-repeat: no-repeat;
+  background-position: -55% 290%;
+  background-size: 54% auto;
+}
+
+@media (min-width: 1230px) and (max-width: 1920px) {
+  .yello-bg {
+    background-image: url("https://sosimplehealth.com/wp-content/uploads/2021/02/Laura-Stavely.png");
+    background-repeat: no-repeat;
+    background-position: -55% 80%;
+    background-size: 54% auto;
+  }
 }

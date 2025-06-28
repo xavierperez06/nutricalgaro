@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const [sendingEmail, setSendingEmail] = useState(false);
 
-  const notity = (type) => {
+  const notifty = (type) => {
     if (type === "success") {
       toast.success("Mensaje enviado con éxito.", {
         position: "top-right",
@@ -55,11 +55,11 @@ const Contact = () => {
       body: JSON.stringify(data),
     })
       .then((result) => {
-        notity("success");
+        notifty("success");
         console.log("Mensaje enviado con éxito.");
       })
       .catch((error) => {
-        notity("error");
+        notifty("error");
         console.log(error);
       })
       .finally(() => {
@@ -69,7 +69,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-[1240px] m-auto">
+    <div className="max-w-[1240px] m-auto p-4 md:p-0">
       <h1 className="text-2xl font-bold text-center p-4">
         Escribe tu consulta
       </h1>
@@ -98,7 +98,7 @@ const Contact = () => {
         />
         <textarea
           id="message"
-          className="border shadow-lg p-3 w-full focus:border-[#ebbf1a] focus:outline-none"
+          className="border shadow-lg p-3 w-full focus:border-[#ebbf1a] focus:outline-none "
           cols={30}
           rows={10}
           placeholder="Mensaje"
@@ -106,7 +106,7 @@ const Contact = () => {
         <div>
           <button
             type="submit"
-            className="mt-2 text-white bg-[#ebbf1a] pt-2 pb-2 rounded-xl hover:bg-[#CDA616] ease-linear duration-300 w-full"
+            className="mt-2 text-white bg-[#ebbf1a] pt-2 pb-2 rounded-md hover:bg-[#CDA616] ease-linear duration-300 w-full"
             disabled={sendingEmail}
           >
             {sendingEmail ? "Enviando..." : "Enviar"}

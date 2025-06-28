@@ -38,9 +38,9 @@ const Navbar = ({ isHome = false }) => {
       }
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
-        <Link href="/" className="flex gap-2 flex-center">
+        <Link href="/" className="flex">
           <Image
-            src={"/assets/images/NutriLogo.png"}
+            src="/assets/images/NutriLogo.png"
             alt="Nutricalgaro Logo"
             width={50}
             height={50}

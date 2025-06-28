@@ -13,7 +13,7 @@ const Talleres = () => {
           className="text-white text-6xl font-bold"
         />
       </div>
-      <div className="flex justify-center">
+      <div className="flex flex-col lg:flex-row">
         <div className="max-w-screen-xl">
           <div className="">
             <Image
@@ -25,7 +25,7 @@ const Talleres = () => {
             />
           </div>
         </div>
-        <div className="pl-6 pt-6  max-w-[800px]">
+        <div className="pl-6 pt-6 max-w-[800px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
