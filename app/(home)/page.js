@@ -2,11 +2,6 @@ import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import Instagram from "@/components/Instagram";
 import AboutMe from "@/components/AboutMe";
-
-import ImgRecetas from "@/public/assets/images/Recetas.jpg";
-import ImgTalleres from "@/public/assets/images/Talleres.jpg";
-import ImgOnline from "@/public/assets/images/AtencionOnline.jpg";
-import ImgPresencial from "@/public/assets/images/AtencionPresencial.jpg";
 import Contact from "@/components/Contact";
 import ReviewSlider from "@/components/ReviewSlider";
 import { reviews, services } from "@/constants";
@@ -25,11 +20,12 @@ export default function Home() {
           <h1 className="text-5xl font-bold text-main-color m-10">
             ¿Cómo puedo ayudarte hoy?
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 p-4 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 p-4 ">
             {/* ToDo: create a json list  */}
             {services.map((service) => {
               return (
                 <ServiceCard
+                  key={service.title}
                   title={service.title}
                   description={service.description}
                   img={service.img}

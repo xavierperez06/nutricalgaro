@@ -4,10 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div
-      style={{ backgroundColor: "#ebbf1a" }}
-      className="flex flex-col text-white"
-    >
+    <div className="flex flex-col text-white bg-primary-color-700">
       <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10">
         <div className="flex flex-col justify-start items-start gap-6 sm:items-center">
           <Image
