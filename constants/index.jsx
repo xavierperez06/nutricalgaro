@@ -39,31 +39,30 @@ export const reviews = [
 
 export const services = [
   {
-    title: "Recetas",
+    title: "Recetarios",
     description:
-      "Las más ricas y sanas recetas que vas a encontrar en todo internet jeje",
+      "Guías de cocina saludable pensadas para inspirarte y facilitarte el camino hacia una alimentación más nutritiva.",
     img: "/assets/images/Recetas.jpg",
-    path: "/recetas",
+    path: "/recetarios",
   },
   {
     title: "Talleres",
     description:
-      "Talleres enfocado en mejorar tu alimentación de manera personalizada y rica.",
-    img: "/assets/images/Talleres.jpg",
+      "Encuentros grupales online diseñados para profundizar en temas específicos de salud y nutrición.",
+    img: "/assets/images/TalleresAvatar.png",
     path: "/talleres",
   },
   {
-    title: "Atención Online",
+    title: "Consulta nutricional online",
     description:
-      "Tu consultas también pueden ser por Whatsapp, Zoom, o Google Meets.",
+      "Un espacio pensado para que puedas cuidar tu alimentación y tu salud desde donde estés.",
     img: "/assets/images/AtencionOnline.jpg",
     path: "/online",
   },
   {
-    title: "Atención Presencial",
-    description:
-      "Talleres enfocado en mejorar tu alimentación de manera personalizada y rica.",
-    img: "/assets/images/AtencionPresencial.jpg",
+    title: "Consultorio presencial",
+    description: "Un espacio para trabajar juntos en tu salud y bienestar.",
+    img: "/assets/images/Presencial.jpg",
     path: "/presencial",
   },
 ];

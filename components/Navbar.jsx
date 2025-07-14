@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { FaInstagram } from "react-icons/fa";
 
 const Navbar = ({ isHome = false }) => {
   const [nav, setNav] = useState(false);
@@ -37,35 +38,56 @@ const Navbar = ({ isHome = false }) => {
           : "left-0 top-0 w-full shadow-xl"
       }
     >
-      <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
-        <Link href="/" className="flex">
+      <div className="max-w-[1240px] m-auto flex justify-between items-center p-2 text-white">
+        <Link href="/" className="flex pr-5">
           <Image
             src="/assets/images/NutriLogo.png"
             alt="Nutricalgaro Logo"
-            width={50}
-            height={50}
+            width={80}
+            height={80}
             className="object-contain"
           />
           <div
             style={{ color: `${navTextColor}` }}
             className="hidden sm:flex items-center md:text-xl"
           >
-            <p>Nutricalgaro</p>
+            <p>María Belén Calgaro</p>
           </div>
         </Link>
 
         <ul style={{ color: `${navTextColor}` }} className="hidden sm:flex">
           <li className="p-4">
-            <Link href="/">Inicio</Link>
+            <Link href="/" className="group">
+              Inicio
+              <div class="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="#services">Servicios</Link>
+            <Link href="#sobremi" className="group">
+              Sobre mí
+              <div class="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="/">Contacto</Link>
+            <Link href="#servicios" className="group">
+              Servicios
+              <div class="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="/">Horarios</Link>
+            <Link href="#contacto" className="group">
+              Contacto
+              <div class="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+            </Link>
+          </li>
+          <li className="p-4 flex align-middle">
+            <Link
+              href="https://www.instagram.com/nutricalgaro/"
+              target="_blank"
+              className="flex"
+            >
+              <FaInstagram size={25} />
+            </Link>
           </li>
         </ul>
 

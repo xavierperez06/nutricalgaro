@@ -10,15 +10,15 @@ const AboutMe = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section id="about" ref={ref}>
+    <section id="sobremi" ref={ref}>
       <div className="flex text-center flex-col items-center justify-center my-10 py-16 md:flex-row md:space-x-5 md:text-left">
-        <div className="md:w-1/2 md:mt-2">
+        <div className="md:w-1/2 md:mt-2 rounded-full">
           <Image
             className="rounded-full"
-            src="/assets/images/AboutMe_Profile.jpg"
+            src="/assets/images/AboutMe.jpg"
             alt=""
-            width={300}
-            height={300}
+            width={400}
+            height={400}
           />
         </div>
         <div className="md:mt-2 md:w-3/5">

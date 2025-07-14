@@ -1,18 +1,23 @@
 import "../styles/global.css";
 import { Raleway } from "next/font/google";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
   title:
-    "Nutricalgaro | Nutricionista en Rosario – Hábitos, Digestión, Bienestar",
+    "Nutricionista en Rosario | María Belén Calgaro – Salud Digestiva y Cambio de Hábitos",
   description:
     "Acompaño procesos de cambio de hábitos, salud digestiva y una relación sana entre comida, cuerpo y mente. Atención online y presencial.",
   keywords: [
     "nutricionista Rosario",
+    "nutrición Rosario",
+    "nutrición consciente",
+    "salud digestiva Rosario",
+    "cambio de hábitos alimenticios",
+    "nutricionista online",
+    "nutricionista presencial Rosario",
+    "nutricionista María Belén Calgaro",
+    "nutricionista para digestión Rosario",
     "salud digestiva",
     "cambio de hábitos",
     "alimentación consciente",
@@ -21,10 +26,10 @@ export const metadata = {
   ],
   authors: [{ name: "María Belén Calgaro" }],
   openGraph: {
-    title: "Nutricalgaro | Nutricionista en Rosario",
+    title: "Nutricionista en Rosario | Nutricalgaro – Salud Digestiva",
     description:
       "Me especializo en acompañar procesos de salud digestiva y cambio de hábitos con atención presencial y online.",
-    url: "https://nutricalgaro.com.ar",
+    url: "https://wwww.nutricalgaro.com.ar",
     siteName: "Nutricalgaro",
     locale: "es_AR",
     type: "website",
@@ -33,7 +38,7 @@ export const metadata = {
         url: "/assets/images/HeroBanner.jpg",
         width: 1200,
         height: 630,
-        alt: "Nutricalgaro portada",
+        alt: "Nutricionista en Rosario María Belén Calgaro",
       },
     ],
   },
@@ -44,12 +49,40 @@ export const metadata = {
       "Te acompaño en tu camino hacia una alimentación saludable y consciente.",
     images: ["/assets/images/HeroBanner.jpg"],
   },
-  metadataBase: new URL("https://nutricalgaro.com.ar"),
+  metadataBase: new URL("https://www.nutricalgaro.com.ar"),
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Nutritionist",
+  inLanguage: "es",
+  name: "María Belén Calgaro",
+  image: "https://www.nutricalgaro.com.ar/assets/images/HeroBanner.jpg",
+  url: "https://www.nutricalgaro.com.ar",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Rosario",
+    addressCountry: "AR",
+  },
+  description:
+    "Nutricionista en Rosario especializada en salud digestiva, hábitos saludables y bienestar. Consultas online y presenciales.",
+  availableService: {
+    "@type": "MedicalTherapy",
+    name: "Asesoramiento nutricional",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
+    <html lang="es" data-theme="light">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+      </head>
       <body className={raleway.className}>
         <div className="main">
           <div className="background" />
