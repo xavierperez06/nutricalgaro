@@ -18,28 +18,17 @@ export const footerLinks = [
 
 export const reviews = [
   {
-    name: "Xavier Perez",
+    name: "XP",
     age: 34,
     location: "Rosario, Santa Fe, Argentina",
-    description: "La mejor nutri que te podes encontrar <3 <3",
-  },
-  {
-    name: "John Doe",
-    age: 60,
-    location: "San Nicolas de los Arroyos, Buenos Aires, Argentina",
-    description: "Super recomendable.",
-  },
-  {
-    name: "Jane Doe",
-    age: 65,
-    location: "Rosario, Santa Fe, Argentina",
-    description: "Los rulitos mas lindos",
+    description:
+      "Gracias al acompañamiento de Belén, logré incorporar alimentos que antes no podía y aprendí a cuidar mucho más la calidad de mi alimentación.",
   },
 ];
 
 export const services = [
   {
-    title: "Recetarios",
+    title: "Recetarios terapéuticos",
     description:
       "Guías de cocina saludable pensadas para inspirarte y facilitarte el camino hacia una alimentación más nutritiva.",
     img: "/assets/images/Recetas.jpg",
