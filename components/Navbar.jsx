@@ -59,25 +59,25 @@ const Navbar = ({ isHome = false }) => {
           <li className="p-4">
             <Link href="/" className="group">
               Inicio
-              <div class="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+              <div className="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
             </Link>
           </li>
           <li className="p-4">
             <Link href="#sobremi" className="group">
               Sobre mí
-              <div class="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+              <div className="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
             </Link>
           </li>
           <li className="p-4">
             <Link href="#servicios" className="group">
               Servicios
-              <div class="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+              <div className="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
             </Link>
           </li>
           <li className="p-4">
             <Link href="#contacto" className="group">
               Contacto
-              <div class="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+              <div className="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
             </Link>
           </li>
           <li className="p-4 flex align-middle">
