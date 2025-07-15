@@ -7,13 +7,13 @@ const ServiceCard = ({ title, description, img, path }) => {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col-reverse justify-between max-w-(--breakpoint-lg) rounded-xl shadow-lg bg-white hover:shadow-primary-color-700 hover:scale-105 lg:flex-row ">
-      <div className="flex flex-col justify-between text-left p-6">
-        <h1 className="font-bold text-3xl">{title}</h1>
+    <div className="hover:shadow-primary-color-700 flex max-w-(--breakpoint-lg) flex-col-reverse justify-between rounded-xl bg-white shadow-lg hover:scale-105 lg:flex-row">
+      <div className="flex flex-col justify-between p-6 text-left">
+        <h1 className="text-3xl font-bold">{title}</h1>
         <p className="mt-6">{description}</p>
         <div>
           <button
-            className="mt-6 text-white bg-primary-color-700 pt-2 pb-2 pl-4 pr-4 rounded-md flex flex-row justify-center items-center hover:bg-primary-color-800 ease-linear duration-300"
+            className="bg-primary-color-700 hover:bg-primary-color-800 mt-6 flex cursor-pointer flex-row items-center justify-center rounded-md pt-2 pr-4 pb-2 pl-4 text-white duration-300 ease-linear"
             type="button"
             onClick={() => router.push(path)}
           >
@@ -21,8 +21,8 @@ const ServiceCard = ({ title, description, img, path }) => {
           </button>
         </div>
       </div>
-      <div className="relative w-full lg:w-80 h-80 p-4 flex justify-center">
-        <div className="relative aspect-2/1 w-96 p-4 overflow-hidden rounded-xl">
+      <div className="relative flex h-80 w-full justify-center p-4 lg:w-80">
+        <div className="relative aspect-2/1 w-96 overflow-hidden rounded-xl p-4">
           <Image
             src={img}
             alt=""

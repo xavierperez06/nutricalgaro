@@ -7,15 +7,15 @@ import { reviews, services } from "@/constants";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden ">
+    <div className="overflow-hidden">
       <Hero message="Construyendo hábitos de autocuidado" />
-      <div className="flex flex-col self-center justify-center text-center items-center yello-bg">
+      <div className="yello-bg flex flex-col items-center justify-center self-center text-center">
         <AboutMe />
-        <section id="servicios" className="max-w-(--breakpoint-xl) mb-20 ">
-          <h1 className="text-5xl font-bold text-main-color m-10">
+        <section id="servicios" className="mb-20 max-w-(--breakpoint-xl)">
+          <h1 className="text-main-color lg:mg-10 m-5 text-5xl font-bold">
             ¿Cómo puedo ayudarte?
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
+          <div className="grid grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-2">
             {services.map((service) => {
               return (
                 <ServiceCard
@@ -30,15 +30,15 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="bg-[#FAE48D] h-[500px] flex flex-col justify-normal items-center mb-10">
-        <h1 className="text-2xl font-bold text-white my-10 sm:text-5xl text-center">
+      <section className="mb-10 flex h-[500px] flex-col items-center justify-normal bg-[#FAE48D]">
+        <h1 className="my-10 text-center text-2xl font-bold text-white sm:text-5xl">
           Amables palabras de mis pacientes
         </h1>
         <ReviewSlider slideInfo={reviews} />
       </section>
-      <div className="flex flex-col self-center justify-center text-center items-center mb-8">
+      <div className="mb-8 flex flex-col items-center justify-center self-center text-center">
         <section id="contacto">
-          <h1 className="text-5xl font-bold text-main-color m-10">Contacto</h1>
+          <h1 className="text-main-color m-10 text-5xl font-bold">Contacto</h1>
           <Contact />
         </section>
       </div>

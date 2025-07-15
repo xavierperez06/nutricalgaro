@@ -11,8 +11,8 @@ const AboutMe = () => {
 
   return (
     <section id="sobremi" ref={ref}>
-      <div className="flex text-center flex-col items-center justify-center my-10 py-16 md:flex-row md:space-x-5 md:text-left">
-        <div className="md:w-1/2 md:mt-2 rounded-full">
+      <div className="my-5 flex flex-col items-center justify-center text-center md:flex-row md:space-x-5 md:text-left lg:my-10 lg:py-16">
+        <div className="rounded-full md:mt-2 md:w-1/2">
           <Image
             className="rounded-full"
             src="/assets/images/AboutMe.jpg"
@@ -24,12 +24,12 @@ const AboutMe = () => {
         <div className="md:mt-2 md:w-3/5">
           <AnimatedText
             text="Hola, me llamo María Belén!"
-            className="text-4xl mt-6 font-bold md:text-7xl md:mt-0"
+            className="mt-6 text-4xl font-bold md:mt-0 md:text-7xl"
             triggerAnimation={isInView}
           />
-          <p className="text-lg mt-4 mb-6 md:text-2xl">
+          <p className="mt-4 mb-6 text-lg md:text-2xl">
             Soy{" "}
-            <span className="font-semibold text-main-color">
+            <span className="text-main-color font-semibold">
               Licenciada en Nutrición{" "}
             </span>
             y te ayudo a crear hábitos.

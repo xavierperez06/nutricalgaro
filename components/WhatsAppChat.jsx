@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { MdSend, MdOutlineClose } from "react-icons/md";
 
-const WhatsAppChat = ({ onClose }) => {
+const WhatsAppChat = ({ onClose, isClosing }) => {
   const [message, setMessage] = useState("");
   const [currentTime, setCurrentTime] = useState("");
 
@@ -18,13 +18,19 @@ const WhatsAppChat = ({ onClose }) => {
 
   const sendWhatsAppMessage = () => {
     const encodedMessage = `https://wa.me/send?phone=5493416757952&text=${encodeURIComponent(
-      message
+      message,
     )}`;
     window.open(encodedMessage, "_blank");
   };
 
   return (
-    <div className="fixed bottom-5 right-6 bg-[#ece5dd] z-30 rounded-lg p-4">
+    <div
+      className={`fixed right-6 bottom-5 z-30 rounded-lg bg-[#ece5dd] p-4 ${
+        isClosing
+          ? "animate-jump-out animate-ease-in-out animate-normal animate-fill-both"
+          : "animate-jump-in animate-ease-out animate-normal animate-fill-both"
+      }`}
+    >
       <div className="flex justify-end">
         <button className="cursor-pointer" onClick={() => onClose(true)}>
           <MdOutlineClose />
@@ -46,14 +52,14 @@ const WhatsAppChat = ({ onClose }) => {
           M.B Calgaro
           <time className="text-xs opacity-50">{currentTime}</time>
         </div>
-        <div className="chat-bubble">Hola ¿Tenés alguna duda?</div>
+        <div className="chat-bubble">Hola👋🏻 ¿Tenés alguna duda?</div>
         <div className="chat-footer opacity-50">Entregado</div>
       </div>
       <div className="chat chat-end">
         <div className="chat-bubble bg-[#dcf8c6]">
           <input
             id="chatMessage"
-            className=" focus:outline-hidden bg-[#dcf8c6] p-1"
+            className="bg-[#dcf8c6] p-1 focus:outline-hidden"
             type="text"
             placeholder="Escribe aquí tu consulta"
             required
@@ -61,10 +67,11 @@ const WhatsAppChat = ({ onClose }) => {
           />
         </div>
       </div>
-      <div className="flex justify-end mt-4">
+      <div className="mt-4 flex justify-end">
         <button
-          className={`btn btn-soft btn-success ${message ? "" : "btn-disabled"
-            } `}
+          className={`btn btn-soft btn-success ${
+            message ? "" : "btn-disabled"
+          } `}
           onClick={() => sendWhatsAppMessage()}
         >
           Enviar <MdSend size={20} />
