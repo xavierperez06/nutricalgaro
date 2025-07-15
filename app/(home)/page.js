@@ -11,7 +11,7 @@ export default function Home() {
       <Hero message="Construyendo hábitos de autocuidado" />
       <div className="flex flex-col self-center justify-center text-center items-center yello-bg">
         <AboutMe />
-        <section id="servicios" className="max-w-screen-xl mb-20 ">
+        <section id="servicios" className="max-w-[theme(screens.xl)] mb-20 ">
           <h1 className="text-5xl font-bold text-main-color m-10">
             ¿Cómo puedo ayudarte hoy?
           </h1>

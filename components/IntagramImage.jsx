@@ -8,7 +8,7 @@ const IntagramImage = ({ img }) => {
     <div className="relative">
       <Image src={img} alt="/" className="w-full h-full" />
       {/* Overlay */}
-      <div className="flex justify-center items-center w-full h-full absolute top-0 left-0 right-0 bottom-0 hover:bg-black/70 group z-[2]">
+      <div className="flex justify-center items-center w-full h-full absolute top-0 left-0 right-0 bottom-0 hover:bg-black/70 group z-2">
         <Link
           href="https://www.instagram.com/nutricalgaro/"
           target="_blank"

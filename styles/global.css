@@ -1,7 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 @plugin "daisyui";
+/*@config '../tailwind.config.js';*/
+
+@theme {
+  --color-primary-200: #fff8e1;
+  --color-primary-300: #fae48d;
+  --color-primary-700: #ebbf1a;
+  --color-primary-800: #cda616;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
