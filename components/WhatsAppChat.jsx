@@ -63,9 +63,8 @@ const WhatsAppChat = ({ onClose }) => {
       </div>
       <div className="flex justify-end mt-4">
         <button
-          className={`btn btn-soft btn-success ${
-            message ? "" : "btn-disabled"
-          } `}
+          className={`btn btn-soft btn-success ${message ? "" : "btn-disabled"
+            } `}
           onClick={() => sendWhatsAppMessage()}
         >
           Enviar <MdSend size={20} />
