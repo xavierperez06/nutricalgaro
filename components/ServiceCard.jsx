@@ -7,7 +7,7 @@ const ServiceCard = ({ title, description, img, path }) => {
   const router = useRouter();
 
   return (
-    <div className="flex justify-between max-w-screen-lg rounded-xl shadow-lg bg-white hover:shadow-primary-color-700 hover:scale-105 md:flex-col-reverse lg:flex-row ">
+    <div className="flex flex-col-reverse justify-between max-w-screen-lg rounded-xl shadow-lg bg-white hover:shadow-primary-color-700 hover:scale-105 lg:flex-row ">
       <div className="flex flex-col justify-between text-left p-6">
         <h1 className="font-bold text-3xl">{title}</h1>
         <p className="mt-6">{description}</p>
@@ -21,7 +21,7 @@ const ServiceCard = ({ title, description, img, path }) => {
           </button>
         </div>
       </div>
-      <div className="relative w-80 h-80 p-4 flex justify-center">
+      <div className="relative w-full lg:w-80 h-80 p-4 flex justify-center">
         <div className="relative aspect-[2/1] w-96 p-4 overflow-hidden rounded-xl">
           <Image
             src={img}
