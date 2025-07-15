@@ -11,7 +11,7 @@ export const footerLinks = [
     links: [
       { title: "Tel: (+54) 9 3416757952", url: "/" },
       { title: "Email: nutricalgaro@gmail.com", url: "/" },
-      { title: "Dirección: Laprida 1656 | Rosario", url: "/" },
+      { title: "Dirección: Maipu 1827 | Rosario", url: "/" },
     ],
   },
 ];

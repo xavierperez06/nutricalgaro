@@ -26,7 +26,7 @@ const WhatsAppChat = ({ onClose }) => {
   return (
     <div className="fixed bottom-5 right-6 bg-[#ece5dd] z-30 rounded-lg p-4">
       <div className="flex justify-end">
-        <button onClick={() => onClose(true)}>
+        <button className="cursor-pointer" onClick={() => onClose(true)}>
           <MdOutlineClose />
         </button>
       </div>

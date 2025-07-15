@@ -13,7 +13,7 @@ export default function Home() {
         <AboutMe />
         <section id="servicios" className="max-w-(--breakpoint-xl) mb-20 ">
           <h1 className="text-5xl font-bold text-main-color m-10">
-            ¿Cómo puedo ayudarte hoy?
+            ¿Cómo puedo ayudarte?
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
             {services.map((service) => {
