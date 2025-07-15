@@ -15,7 +15,7 @@ const ServiceContent = ({ img, title, content }) => {
         />
       </div>
       <div className="flex flex-col relative lg:flex-row lg:justify-center">
-        <div className="max-w-screen-xl">
+        <div className="max-w-(--breakpoint-xl)">
           <div className="">
             <Image className="p-6" src={img} alt="" width={700} height={300} />
           </div>

@@ -77,14 +77,14 @@ const Contact = () => {
         <div className="grid grid-cols-2 gap-2">
           <input
             id="fullname"
-            className="border shadow-md p-3 focus:border-[#ebbf1a] focus:outline-none"
+            className="border shadow-md p-3 focus:border-primary-color-700 focus:outline-hidden"
             type="text"
             placeholder="Nombre Completo"
             required
           />
           <input
             id="email"
-            className="border shadow-lg p-3 focus:border-[#ebbf1a] focus:outline-none"
+            className="border shadow-lg p-3 focus:border-primary-color-700 focus:outline-hidden"
             type="email"
             placeholder="Email"
             required
@@ -92,13 +92,13 @@ const Contact = () => {
         </div>
         <input
           id="subject"
-          className="border shadow-lg p-3 w-full my-2 focus:border-[#ebbf1a] focus:outline-none"
+          className="border shadow-lg p-3 w-full my-2 focus:border-primary-color-700 focus:outline-hidden"
           type="text"
           placeholder="Motivo de consulta"
         />
         <textarea
           id="message"
-          className="border shadow-lg p-3 w-full focus:border-[#ebbf1a] focus:outline-none "
+          className="border shadow-lg p-3 w-full focus:border-primary-color-700 focus:outline-hidden "
           cols={30}
           rows={10}
           placeholder="Mensaje"
@@ -106,7 +106,7 @@ const Contact = () => {
         <div>
           <button
             type="submit"
-            className="mt-2 text-white bg-[#ebbf1a] pt-2 pb-2 rounded-md hover:bg-[#CDA616] ease-linear duration-300 w-full"
+            className="mt-2 text-white bg-primary-color-700 pt-2 pb-2 rounded-md hover:bg-[#CDA616] ease-linear duration-300 w-full"
             disabled={sendingEmail}
           >
             {sendingEmail ? "Enviando..." : "Enviar"}

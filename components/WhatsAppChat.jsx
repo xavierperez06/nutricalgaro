@@ -53,7 +53,7 @@ const WhatsAppChat = ({ onClose }) => {
         <div className="chat-bubble bg-[#dcf8c6]">
           <input
             id="chatMessage"
-            className=" focus:outline-none bg-[#dcf8c6] p-1"
+            className=" focus:outline-hidden bg-[#dcf8c6] p-1"
             type="text"
             placeholder="Escribe aquí tu consulta"
             required
