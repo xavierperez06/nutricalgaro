@@ -54,11 +54,13 @@ export const metadata = {
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Nutritionist",
+  "@type": "Person",
   inLanguage: "es",
   name: "María Belén Calgaro",
+  jobTitle: "Nutricionista en Rosario",
   image: "https://www.nutricalgaro.com.ar/assets/images/HeroBanner.jpg",
   url: "https://www.nutricalgaro.com.ar",
+  sameAs: ["https://www.instagram.com/nutricalgaro"],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Rosario",
@@ -76,6 +78,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" data-theme="light">
       <head>
+        <link rel="icon" href="/favicon.ico" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
