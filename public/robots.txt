@@ -2,8 +2,5 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://nutricalgaro.com.ar
-
 # Sitemaps
-Sitemap: https://nutricalgaro.com.ar/sitemap.xml
+Sitemap: https://www.nutricalgaro.com.ar/sitemap.xml

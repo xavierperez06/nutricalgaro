@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col text-white bg-primary-color-700">
-      <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10">
-        <div className="flex flex-col justify-start items-start gap-6 sm:items-center">
+    <div className="bg-primary-color-700 flex flex-col text-white">
+      <div className="flex flex-wrap justify-between gap-5 px-6 py-10 max-md:flex-col sm:px-16">
+        <div className="flex flex-col items-center justify-center gap-6">
           <Image
             src={"/assets/images/LogoFooter.png"}
             alt="Nutricalgaro Logo"
@@ -16,7 +16,7 @@ const Footer = () => {
           />
         </div>
 
-        <div className="flex-1 w-full flex md:justify-end flex-wrap gap-20">
+        <div className="flex w-full flex-1 flex-wrap gap-20 md:justify-end">
           {footerLinks.map((link) => (
             <div key={link.title} className="flex flex-col gap-6">
               <h3 className="font-bold">{link.title}</h3>

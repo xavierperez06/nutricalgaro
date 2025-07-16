@@ -17,7 +17,7 @@ const WhatsAppChat = ({ onClose, isClosing }) => {
   }, []);
 
   const sendWhatsAppMessage = () => {
-    const encodedMessage = `https://wa.me/send?phone=5493416757952&text=${encodeURIComponent(
+    const encodedMessage = `https://wa.me/5493416757952?text=${encodeURIComponent(
       message,
     )}`;
     window.open(encodedMessage, "_blank");

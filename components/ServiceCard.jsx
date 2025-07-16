@@ -25,7 +25,7 @@ const ServiceCard = ({ title, description, img, path }) => {
         <div className="relative aspect-2/1 w-96 overflow-hidden rounded-xl p-4">
           <Image
             src={img}
-            alt=""
+            alt={`Imagen del servicio home: ${title}`}
             fill
             className="object-cover"
             quality={90}

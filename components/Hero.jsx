@@ -10,16 +10,16 @@ const Hero = ({ title, message }) => {
 
   return (
     <div
-      className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover hero-img"
+      className="hero-img mb-12 flex h-screen items-center justify-center bg-cover bg-fixed bg-center"
       ref={ref}
     >
       {/* overlay */}
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/60 z-2" />
-      <div className="p-5 text-white z-2 -mt-40">
+      <div className="absolute top-0 right-0 bottom-0 left-0 z-2 bg-black/60" />
+      <div className="z-2 -mt-40 p-5 text-white">
         {title && <h2 className="text-5xl font-bold">{title}</h2>}
         <AnimatedText
           text={message}
-          className="py-5 text-3xl text-white inline-block"
+          className="inline-block py-5 text-6xl text-white"
           triggerAnimation={isInView}
         />
       </div>

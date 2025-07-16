@@ -25,6 +25,10 @@ export const metadata = {
     "María Belén Calgaro nutricionista",
   ],
   authors: [{ name: "María Belén Calgaro" }],
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "Nutricionista en Rosario | Nutricalgaro – Salud Digestiva",
     description:

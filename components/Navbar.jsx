@@ -34,11 +34,11 @@ const Navbar = ({ isHome = false }) => {
       style={{ backgroundColor: `${navColor}` }}
       className={
         isHome
-          ? "fixed left-0 top-0 w-full z-10 ease-in duration-300"
-          : "left-0 top-0 w-full shadow-xl"
+          ? "fixed top-0 left-0 z-10 w-full duration-300 ease-in"
+          : "top-0 left-0 w-full shadow-xl"
       }
     >
-      <div className="max-w-[1240px] m-auto flex justify-between items-center p-2 text-white">
+      <div className="m-auto flex max-w-[1240px] items-center justify-between p-2 text-white">
         <Link href="/" className="flex pr-5">
           <Image
             src="/assets/images/NutriLogo.png"
@@ -49,7 +49,7 @@ const Navbar = ({ isHome = false }) => {
           />
           <div
             style={{ color: `${navTextColor}` }}
-            className="hidden sm:flex items-center md:text-xl"
+            className="hidden items-center sm:flex md:text-xl"
           >
             <p>María Belén Calgaro</p>
           </div>
@@ -59,28 +59,28 @@ const Navbar = ({ isHome = false }) => {
           <li className="p-4">
             <Link href="/" className="group">
               Inicio
-              <div className="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+              <div className="bg-primary-color-700 h-[2px] w-0 transition-all duration-500 group-hover:w-full"></div>
             </Link>
           </li>
           <li className="p-4">
             <Link href="#sobremi" className="group">
               Sobre mí
-              <div className="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+              <div className="bg-primary-color-700 h-[2px] w-0 transition-all duration-500 group-hover:w-full"></div>
             </Link>
           </li>
           <li className="p-4">
             <Link href="#servicios" className="group">
               Servicios
-              <div className="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+              <div className="bg-primary-color-700 h-[2px] w-0 transition-all duration-500 group-hover:w-full"></div>
             </Link>
           </li>
           <li className="p-4">
             <Link href="#contacto" className="group">
               Contacto
-              <div className="bg-primary-color-700 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+              <div className="bg-primary-color-700 h-[2px] w-0 transition-all duration-500 group-hover:w-full"></div>
             </Link>
           </li>
-          <li className="p-4 flex align-middle">
+          <li className="flex p-4 align-middle">
             <Link
               href="https://www.instagram.com/nutricalgaro/"
               target="_blank"
@@ -92,7 +92,7 @@ const Navbar = ({ isHome = false }) => {
         </ul>
 
         {/* Mobile Button */}
-        <div className="block sm:hidden z-10" onClick={() => setNav(!nav)}>
+        <div className="z-10 block sm:hidden" onClick={() => setNav(!nav)}>
           {nav ? (
             <AiOutlineClose style={{ color: `${navTextColor}` }} size={20} />
           ) : (
@@ -103,22 +103,30 @@ const Navbar = ({ isHome = false }) => {
         <div
           className={
             nav
-              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in duration-300 bg-black"
-              : "sm:hidden absolute top-0 -left-full right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in duration-300 bg-black"
+              ? "absolute top-0 right-0 bottom-0 left-0 flex h-screen w-full items-center justify-center bg-black text-center duration-300 ease-in sm:hidden"
+              : "absolute top-0 right-0 bottom-0 -left-full flex h-screen w-full items-center justify-center bg-black text-center duration-300 ease-in sm:hidden"
           }
         >
           <ul>
             <li className="p-4 text-4xl">
-              <Link href="/">Home</Link>
+              <Link href="/" onClick={() => setNav(false)}>
+                Inicio
+              </Link>
             </li>
             <li className="p-4 text-4xl">
-              <Link href="/#services">Servicios</Link>
+              <Link href="#sobremi" onClick={() => setNav(false)}>
+                Sobre mí
+              </Link>
             </li>
             <li className="p-4 text-4xl">
-              <Link href="/">Contacto</Link>
+              <Link href="#servicios" onClick={() => setNav(false)}>
+                Servicios
+              </Link>
             </li>
             <li className="p-4 text-4xl">
-              <Link href="/">Horarios</Link>
+              <Link href="#contacto" onClick={() => setNav(false)}>
+                Contacto
+              </Link>
             </li>
           </ul>
         </div>

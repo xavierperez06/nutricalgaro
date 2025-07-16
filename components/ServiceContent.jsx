@@ -39,7 +39,15 @@ const ServiceContent = ({ img, title, content }) => {
       <div className="relative flex flex-col lg:flex-row lg:justify-center">
         <div className="max-w-(--breakpoint-xl)">
           <div className="">
-            <Image className="p-6" src={img} alt="" width={700} height={300} />
+            <Image
+              className="p-6"
+              src={img}
+              alt={`Imagen del servicio: ${title}`}
+              width={700}
+              height={300}
+              priority
+              sizes="(max-width: 768px) 100vw, 700px"
+            />
           </div>
         </div>
         <div className="bg-primary-color-200 max-w-[800px] self-start p-6 lg:mt-20 lg:-ml-32">
