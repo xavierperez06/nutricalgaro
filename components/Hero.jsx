@@ -10,7 +10,7 @@ const Hero = ({ title, message }) => {
 
   return (
     <div
-      className="hero-img mb-12 flex h-screen items-center justify-center bg-cover bg-fixed"
+      className="hero-img relative mb-12 flex h-screen items-center justify-center bg-cover bg-fixed"
       ref={ref}
     >
       {/* overlay */}
