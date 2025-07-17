@@ -3,7 +3,6 @@ export const footerLinks = [
     title: "Redes Sociales",
     links: [
       { title: "Instagram", url: "https://www.instagram.com/nutricalgaro/" },
-      { title: "Facebook", url: "/" },
     ],
   },
   {
