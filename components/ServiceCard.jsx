@@ -10,7 +10,7 @@ const ServiceCard = ({ title, description, img, path }) => {
     <div className="hover:shadow-primary-color-700 flex max-w-(--breakpoint-lg) flex-col-reverse justify-between rounded-xl bg-white shadow-lg hover:scale-105 lg:flex-row">
       <div className="flex flex-col justify-between p-6 text-left">
         <h1 className="text-3xl font-bold">{title}</h1>
-        <p className="mt-6">{description}</p>
+        <p className="mt-6 text-justify">{description}</p>
         <div>
           <button
             className="bg-primary-color-700 hover:bg-primary-color-800 mt-6 flex cursor-pointer flex-row items-center justify-center rounded-md pt-2 pr-4 pb-2 pl-4 text-white duration-300 ease-linear"

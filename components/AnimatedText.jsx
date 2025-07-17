@@ -31,21 +31,26 @@ const wordAnimation = {
 
 const AnimatedText = ({ text, className = "", triggerAnimation = false }) => {
   return (
-    <div className="py-2 flex items-center justify-center overflow-hidden">
+    <div className="flex items-center overflow-hidden py-2">
       <motion.h1
         className={`inline-block text-black ${className}`}
         variants={textAnimation}
         initial="initial"
         animate={triggerAnimation ? "animate" : "initial"}
       >
-        {text.split(" ").map((word, index) => (
-          <motion.span
-            key={word + "-" + index}
-            variants={wordAnimation}
-            className="inline-block"
-          >
-            {word}&nbsp;
-          </motion.span>
+        {text.split("\n").map((line, lineIdx) => (
+          <span key={`line-${lineIdx}`}>
+            {line.split(" ").map((word, wordIdx) => (
+              <motion.span
+                key={`word-${lineIdx}-${wordIdx}`}
+                variants={wordAnimation}
+                className="inline-block"
+              >
+                {word}&nbsp;
+              </motion.span>
+            ))}
+            <br />
+          </span>
         ))}
       </motion.h1>
     </div>

@@ -8,7 +8,10 @@ import { reviews, services } from "@/constants";
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <Hero message="Construyendo hábitos de autocuidado" />
+      <Hero
+        title="Construyendo hábitos de autocuidado"
+        message={`Salud digestiva\nSanar vínculo mente cuerpo alimento\nSalud hormonal femenina`}
+      />
       <div className="yello-bg flex flex-col items-center justify-center self-center text-center">
         <AboutMe />
         <section id="servicios" className="mb-20 max-w-(--breakpoint-xl)">
