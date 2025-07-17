@@ -19,7 +19,7 @@ const Hero = ({ title, message }) => {
         {title && <h2 className="text-6xl font-bold">{title}</h2>}
         <AnimatedText
           text={message}
-          className="inline-block py-5 text-left text-5xl text-white"
+          className="inline-block py-5 text-left text-4xl text-white"
           triggerAnimation={isInView}
         />
       </div>

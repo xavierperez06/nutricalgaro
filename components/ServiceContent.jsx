@@ -50,7 +50,7 @@ const ServiceContent = ({ img, title, content }) => {
             />
           </div>
         </div>
-        <div className="bg-primary-color-200 max-w-[800px] self-start p-6 lg:mt-20 lg:-ml-32">
+        <div className="bg-primary-color-200 max-w-[800px] self-start p-6 shadow-2xl lg:mt-20 lg:-ml-32">
           {content}
         </div>
       </div>
