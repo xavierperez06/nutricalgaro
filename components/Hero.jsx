@@ -16,7 +16,7 @@ const Hero = ({ title, message }) => {
       {/* overlay */}
       <div className="absolute top-0 right-0 bottom-0 left-0 z-2 bg-black/50" />
       <div className="z-2 -mt-40 p-5 text-white">
-        {title && <h2 className="text-6xl font-bold">{title}</h2>}
+        {title && <h1 className="text-6xl font-bold">{title}</h1>}
         <AnimatedText
           text={message}
           className="inline-block py-5 text-left text-4xl text-white"

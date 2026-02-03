@@ -7,7 +7,7 @@ export const metadata = {
   title:
     "Nutricionista en Rosario | María Belén Calgaro – Salud Digestiva y Cambio de Hábitos",
   description:
-    "Acompaño procesos de cambio de hábitos, salud digestiva y una relación sana entre comida, cuerpo y mente. Atención online y presencial.",
+    "Nutricionista en Rosario especializada en salud digestiva y cambio de hábitos. Atención presencial y online para sanar tu relación con la comida.",
   keywords: [
     "nutricionista Rosario",
     "nutrición Rosario",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Nutricionista en Rosario | Nutricalgaro – Salud Digestiva",
     description:
       "Me especializo en acompañar procesos de salud digestiva y cambio de hábitos con atención presencial y online.",
-    url: "https://wwww.nutricalgaro.com.ar",
+    url: "https://www.nutricalgaro.com.ar",
     siteName: "Nutricalgaro",
     locale: "es_AR",
     type: "website",
@@ -58,7 +58,7 @@ export const metadata = {
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Person",
+  "@type": "Dietitian",
   inLanguage: "es",
   name: "María Belén Calgaro",
   jobTitle: "Nutricionista en Rosario",

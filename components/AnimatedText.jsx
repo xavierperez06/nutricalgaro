@@ -32,7 +32,7 @@ const wordAnimation = {
 const AnimatedText = ({ text, className = "", triggerAnimation = false }) => {
   return (
     <div className="flex items-center overflow-hidden py-2">
-      <motion.h1
+      <motion.h2
         className={`inline-block text-black ${className}`}
         variants={textAnimation}
         initial="initial"
@@ -52,7 +52,7 @@ const AnimatedText = ({ text, className = "", triggerAnimation = false }) => {
             <br />
           </span>
         ))}
-      </motion.h1>
+      </motion.h2>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://nutricalgaro.com.ar",
+  siteUrl: "https://www.nutricalgaro.com.ar",
   generateRobotsTxt: true,
   sitemapSize: 7000,
 };
