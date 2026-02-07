@@ -1,6 +1,12 @@
 import ServiceContent from "@/components/ServiceContent";
 import ImageTalleres from "@/public/assets/images/TalleresContent.jpg";
 
+export const metadata = {
+  title: {
+    absolute: "Talleres | Nutricionista María Belén Calgaro",
+  },
+};
+
 const Talleres = () => {
   const getContent = () => (
     <div className="flex flex-col gap-2 text-justify">

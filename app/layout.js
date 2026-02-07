@@ -4,8 +4,11 @@ import { Raleway } from "next/font/google";
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
-  title:
-    "Nutricionista en Rosario | María Belén Calgaro – Salud Digestiva y Cambio de Hábitos",
+  title: {
+    default:
+      "Nutricionista en Rosario | María Belén Calgaro | Salud Digestiva y Cambio de Hábitos",
+    template: "%s | Nutricalgaro",
+  },
   description:
     "Nutricionista en Rosario especializada en salud digestiva y cambio de hábitos. Atención presencial y online para sanar tu relación con la comida.",
   keywords: [
@@ -24,6 +27,7 @@ export const metadata = {
     "atención online nutrición",
     "María Belén Calgaro nutricionista",
   ],
+  metadataBase: new URL("https://www.nutricalgaro.com.ar"),
   authors: [{ name: "María Belén Calgaro" }],
   icons: {
     icon: "/favicon.ico",

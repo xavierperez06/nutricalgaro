@@ -6,11 +6,6 @@ import Footer from "@/components/Footer";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Nutricalgaro",
-  description: "Nutricalgaro webpage",
-};
-
 export default function ServicesLayout({ children }) {
   return (
     <>

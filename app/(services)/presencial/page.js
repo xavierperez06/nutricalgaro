@@ -1,6 +1,12 @@
 import ServiceContent from "@/components/ServiceContent";
 import ImagePresencial from "@/public/assets/images/Presencial.jpg";
 
+export const metadata = {
+  title: {
+    absolute: "Consultorio presencial | Nutricionista María Belén Calgaro",
+  },
+};
+
 const Presencial = () => {
   return (
     <ServiceContent

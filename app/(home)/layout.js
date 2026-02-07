@@ -7,11 +7,6 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Nutricalgaro",
-  description: "Nutricalgaro webpage",
-};
-
 export default function HomeLayout({ children }) {
   return (
     <>

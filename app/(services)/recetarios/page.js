@@ -1,6 +1,12 @@
 import ServiceContent from "@/components/ServiceContent";
 import ImageRecetarios from "@/public/assets/images/Recetas.jpg";
 
+export const metadata = {
+  title: {
+    absolute: "Recetarios | Nutricionista María Belén Calgaro",
+  },
+};
+
 const Recetarios = () => {
   return (
     <ServiceContent

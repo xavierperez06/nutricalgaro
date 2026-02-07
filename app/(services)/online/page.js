@@ -1,6 +1,12 @@
 import ServiceContent from "@/components/ServiceContent";
 import ImageAtencionOnline from "@/public/assets/images/AtencionOnline.jpg";
 
+export const metadata = {
+  title: {
+    absolute: "Consulta nutricional online | Nutricionista María Belén Calgaro",
+  },
+};
+
 const Online = () => {
   return (
     <ServiceContent
