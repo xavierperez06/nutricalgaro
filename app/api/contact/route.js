@@ -19,7 +19,7 @@ export const POST = async (request) => {
   try {
     const emailSent = await transporter.sendMail({
       from: user,
-      to: "xavierperez.06@gmail.com",
+      to: "nutricalgaro@gmail.com",
       replyTo: email,
       subject: `${fullname} te ha enviado un mensaje desde Nutricalgaro.`,
       html: `<p>Nombre y Apellido: ${fullname} </p>
