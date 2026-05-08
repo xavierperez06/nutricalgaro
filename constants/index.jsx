@@ -20,7 +20,7 @@ export const footerLinks = [
 
 export const reviews = [
   {
-    name: "XP",
+    name: "Román",
     age: 34,
     location: "Rosario, Santa Fe, Argentina",
     description:
