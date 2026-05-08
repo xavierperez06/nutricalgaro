@@ -16,7 +16,7 @@ const AboutMe = () => {
           <Image
             className="rounded-full"
             src="/assets/images/AboutMe.jpg"
-            alt=""
+            alt="María Belén Calgaro - Nutricionista presencial y online en Rosario"
             width={400}
             height={400}
           />

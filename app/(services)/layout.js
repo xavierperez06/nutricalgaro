@@ -1,10 +1,5 @@
-import "@/styles/global.css";
-import { Raleway } from "next/font/google";
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const raleway = Raleway({ subsets: ["latin"] });
 
 export default function ServicesLayout({ children }) {
   return (

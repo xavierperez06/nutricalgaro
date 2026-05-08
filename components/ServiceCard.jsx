@@ -1,24 +1,19 @@
-"use client";
-
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const ServiceCard = ({ title, description, img, path }) => {
-  const router = useRouter();
-
   return (
     <div className="hover:shadow-primary-color-700 flex max-w-(--breakpoint-lg) flex-col-reverse justify-between rounded-xl bg-white shadow-lg hover:scale-105 lg:flex-row">
       <div className="flex flex-col justify-between p-6 text-left">
         <h1 className="text-3xl font-bold">{title}</h1>
         <p className="mt-6 text-justify">{description}</p>
         <div>
-          <button
-            className="bg-primary-color-700 hover:bg-primary-color-800 mt-6 flex cursor-pointer flex-row items-center justify-center rounded-md pt-2 pr-4 pb-2 pl-4 text-white duration-300 ease-linear"
-            type="button"
-            onClick={() => router.push(path)}
+          <Link
+            href={path}
+            className="bg-primary-color-700 hover:bg-primary-color-800 mt-6 flex w-max cursor-pointer flex-row items-center justify-center rounded-md pt-2 pr-4 pb-2 pl-4 text-white duration-300 ease-linear"
           >
             Leer más
-          </button>
+          </Link>
         </div>
       </div>
       <div className="relative flex h-80 w-full justify-center p-4 lg:w-80">

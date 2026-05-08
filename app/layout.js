@@ -57,7 +57,6 @@ export const metadata = {
       "Te acompaño en tu camino hacia una alimentación saludable y consciente.",
     images: ["/assets/images/HeroBanner.jpg"],
   },
-  metadataBase: new URL("https://www.nutricalgaro.com.ar"),
 };
 
 const structuredData = {
