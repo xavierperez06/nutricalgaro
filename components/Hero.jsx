@@ -14,7 +14,7 @@ const Hero = ({ title, message }) => {
       ref={ref}
     >
       {/* overlay */}
-      <div className="absolute top-0 right-0 bottom-0 left-0 z-2 bg-black/50" />
+      <div className="absolute inset-0 z-2 bg-gradient-to-b from-black/70 via-black/30 to-black/70" />
       <div className="z-2 -mt-40 p-5 text-white">
         {title && <h1 className="text-6xl font-bold">{title}</h1>}
         <AnimatedText

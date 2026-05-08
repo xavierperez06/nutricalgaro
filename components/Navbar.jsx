@@ -15,7 +15,7 @@ const Navbar = ({ isHome = false }) => {
     if (isHome) {
       const changeColor = () => {
         if (window.scrollY >= 90) {
-          setNavColor("#ffffff");
+          setNavColor("rgba(255, 255, 255, 0.85)");
           setNavTextColor("#ebbf1a");
         } else {
           setNavColor("transparent");
@@ -34,8 +34,8 @@ const Navbar = ({ isHome = false }) => {
       style={{ backgroundColor: `${navColor}` }}
       className={
         isHome
-          ? "fixed top-0 left-0 z-10 w-full duration-300 ease-in"
-          : "top-0 left-0 w-full shadow-xl"
+          ? "fixed top-0 left-0 z-10 w-full backdrop-blur-md duration-300 ease-in" // 👈 Added backdrop-blur-md
+          : "top-0 left-0 w-full bg-white/85 shadow-xl backdrop-blur-md" // 👈 Added for non-home pages
       }
     >
       <div className="m-auto flex max-w-[1240px] items-center justify-between p-2 text-white">

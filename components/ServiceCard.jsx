@@ -3,7 +3,8 @@ import Link from "next/link";
 
 const ServiceCard = ({ title, description, img, path }) => {
   return (
-    <div className="hover:shadow-primary-color-700 flex max-w-(--breakpoint-lg) flex-col-reverse justify-between rounded-xl bg-white shadow-lg hover:scale-105 lg:flex-row">
+    <div className="flex max-w-(--breakpoint-lg) flex-col-reverse justify-between rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(235,191,26,0.40)] lg:flex-row">
+      {" "}
       <div className="flex flex-col justify-between p-6 text-left">
         <h1 className="text-3xl font-bold">{title}</h1>
         <p className="mt-6 text-justify">{description}</p>

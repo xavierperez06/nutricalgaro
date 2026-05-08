@@ -3,6 +3,23 @@ import nodeemailer from "nodemailer";
 export const POST = async (request) => {
   const { fullname, email, subject, message } = await request.json();
 
+  if (!fullname || !fullname.trim()) {
+    return new Response(JSON.stringify({ error: "El nombre es requerido." }), {
+      status: 400,
+    });
+  }
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return new Response(JSON.stringify({ error: "Email inválido." }), {
+      status: 400,
+    });
+  }
+  if (!message || !message.trim()) {
+    return new Response(
+      JSON.stringify({ error: "El mensaje no puede estar vacío." }),
+      { status: 400 },
+    );
+  }
+
   const user = process.env.EMAIL_USER;
 
   const transporter = nodeemailer.createTransport({
