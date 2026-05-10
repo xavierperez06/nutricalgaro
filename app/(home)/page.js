@@ -34,7 +34,7 @@ export default function Home() {
         </section>
       </div>
       <section className="mb-10 flex h-[500px] flex-col items-center justify-normal bg-[#FAE48D]">
-        <h2 className="my-10 text-center text-2xl font-bold text-white sm:text-5xl">
+        <h2 className="my-10 text-center text-2xl font-bold text-gray-400 sm:text-5xl">
           Amables palabras de mis pacientes
         </h2>
         <ReviewSlider slideInfo={reviews} />

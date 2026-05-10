@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import ButtonLink from "./common/ButtonLink";
 
 const ServiceCard = ({ title, description, img, path }) => {
   return (
@@ -9,23 +9,20 @@ const ServiceCard = ({ title, description, img, path }) => {
         <h1 className="text-3xl font-bold">{title}</h1>
         <p className="mt-6 text-justify">{description}</p>
         <div>
-          <Link
-            href={path}
-            className="bg-primary-color-700 hover:bg-primary-color-800 mt-6 flex w-max cursor-pointer flex-row items-center justify-center rounded-md pt-2 pr-4 pb-2 pl-4 text-white duration-300 ease-linear"
-          >
+          <ButtonLink href={path} className="mt-6">
             Leer más
-          </Link>
+          </ButtonLink>
         </div>
       </div>
       <div className="relative flex h-80 w-full justify-center p-4 lg:w-80">
         <div className="relative aspect-2/1 w-96 overflow-hidden rounded-xl p-4">
           <Image
             src={img}
-            alt={`Imagen del servicio home: ${title}`}
+            alt={`Servicio de nutrición: ${title}`}
             fill
             className="object-cover"
-            quality={90}
-            sizes="(min-width: 1024px) 384px, 100vw"
+            sizes="(min-width: 1024px) 384px, 90vw"
+            placeholder="blur"
           />
         </div>
       </div>

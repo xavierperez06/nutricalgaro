@@ -1,7 +1,9 @@
 "use client";
+
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Button from "./common/Button";
 
 const Contact = () => {
   const [sendingEmail, setSendingEmail] = useState(false);
@@ -104,13 +106,9 @@ const Contact = () => {
           placeholder="Mensaje"
         ></textarea>
         <div>
-          <button
-            type="submit"
-            className="bg-primary-color-700 mt-2 w-full cursor-pointer rounded-md pt-2 pb-2 text-white duration-300 ease-linear hover:bg-[#CDA616]"
-            disabled={sendingEmail}
-          >
+          <Button type="submit" disabled={sendingEmail} className="mt-2 w-full">
             {sendingEmail ? "Enviando..." : "Enviar"}
-          </button>
+          </Button>
         </div>
       </form>
       <ToastContainer autoClose={8000} />

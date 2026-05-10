@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import AnimatedText from "./AnimatedText";
 import { useInView } from "framer-motion";
+import imgAboutMe from "@/public/assets/images/AboutMe.jpg";
 
 const AboutMe = () => {
   const ref = useRef(null);
@@ -11,14 +12,20 @@ const AboutMe = () => {
 
   return (
     <section id="sobremi" ref={ref}>
-      <div className="my-5 flex flex-col items-center justify-center text-center md:flex-row md:space-x-5 md:text-left lg:my-10 lg:py-16">
-        <div className="rounded-full md:mt-2 md:w-1/2">
+      <div className="my-5 flex flex-col items-center justify-center text-center md:flex-row md:space-x-5 md:text-left lg:my-10 lg:ml-5 lg:py-16">
+        <div className="rounded-full p-2 md:mt-2 md:w-1/2">
           <Image
-            className="rounded-full"
-            src="/assets/images/AboutMe.jpg"
+            src={imgAboutMe}
             alt="María Belén Calgaro - Nutricionista presencial y online en Rosario"
             width={400}
             height={400}
+            className="rounded-full"
+            sizes="(max-width: 768px) 100vw, 400px"
+            style={{
+              width: "100%",
+              height: "auto",
+              maxWidth: "400px",
+            }}
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
