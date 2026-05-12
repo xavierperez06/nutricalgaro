@@ -13,7 +13,7 @@
     "@react-google-maps/api": "^2.18.1",
     "@tailwindcss/postcss": "^4.1.11",
     "daisyui": "^5.0.43",
-    "framer-motion": "^10.12.18",
+    "framer-motion": "^12.38.0",
     "next": "^16.2.6",
     "next-sitemap": "^4.2.3",
     "nodemailer": "^6.9.3",
