@@ -56,17 +56,17 @@
 }
 
 .yello-bg {
-  background-image: url("https://sosimplehealth.com/wp-content/uploads/2021/02/Laura-Stavely.png");
+  background-image: url("/assets/images/YelloBg.png");
   background-repeat: no-repeat;
-  background-position: -55% 290%;
+  background-position: -15% 290%;
   background-size: 54% auto;
 }
 
 @media (min-width: 1230px) and (max-width: 1920px) {
   .yello-bg {
-    background-image: url("https://sosimplehealth.com/wp-content/uploads/2021/02/Laura-Stavely.png");
+    background-image: url("/assets/images/YelloBg.png");
     background-repeat: no-repeat;
-    background-position: -55% 80%;
-    background-size: 54% auto;
+    background-position: -25% 75%;
+    background-size: 44% auto;
   }
 }

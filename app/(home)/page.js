@@ -33,11 +33,16 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="mb-10 flex h-[500px] flex-col items-center justify-normal bg-[#FAE48D]">
-        <h2 className="my-10 text-center text-2xl font-bold text-gray-400 sm:text-5xl">
-          Amables palabras de mis pacientes
-        </h2>
-        <ReviewSlider slideInfo={reviews} />
+      <section className="mb-16 flex min-h-[500px] flex-col items-center justify-center bg-gradient-to-b from-[#FAE48D] to-[#f7db69] px-4 py-20">
+        <div className="w-full max-w-5xl">
+          <h2 className="mb-12 text-center text-3xl font-extrabold tracking-tight text-gray-400 sm:text-5xl">
+            Amables palabras de mis pacientes
+          </h2>
+
+          <div className="mx-auto w-full">
+            <ReviewSlider slideInfo={reviews} />
+          </div>
+        </div>
       </section>
       <div className="mb-8 flex flex-col items-center justify-center self-center text-center">
         <section id="contacto">

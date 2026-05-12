@@ -19,7 +19,7 @@ const AboutMe = () => {
             alt="María Belén Calgaro - Nutricionista presencial y online en Rosario"
             width={400}
             height={400}
-            className="rounded-full"
+            className="rounded-full lg:ml-24"
             sizes="(max-width: 768px) 100vw, 400px"
             style={{
               width: "100%",

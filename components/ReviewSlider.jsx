@@ -10,7 +10,7 @@ const ReviewSlider = ({ slideInfo }) => {
       showThumbs={false}
       autoPlay
       infiniteLoop
-      interval={4000}
+      interval={6000}
       showArrows={false}
       showIndicators={false}
       showStatus={false}
