@@ -63,19 +63,19 @@ const Navbar = ({ isHome = false }) => {
             </Link>
           </li>
           <li className="p-4">
-            <Link href="#sobremi" className="group">
+            <Link href="/#sobremi" className="group">
               Sobre mí
               <div className="bg-primary-color-700 h-[2px] w-0 transition-all duration-500 group-hover:w-full"></div>
             </Link>
           </li>
           <li className="p-4">
-            <Link href="#servicios" className="group">
+            <Link href="/#servicios" className="group">
               Servicios
               <div className="bg-primary-color-700 h-[2px] w-0 transition-all duration-500 group-hover:w-full"></div>
             </Link>
           </li>
           <li className="p-4">
-            <Link href="#contacto" className="group">
+            <Link href="/#contacto" className="group">
               Contacto
               <div className="bg-primary-color-700 h-[2px] w-0 transition-all duration-500 group-hover:w-full"></div>
             </Link>
@@ -114,17 +114,17 @@ const Navbar = ({ isHome = false }) => {
               </Link>
             </li>
             <li className="p-4 text-4xl">
-              <Link href="#sobremi" onClick={() => setNav(false)}>
+              <Link href="/#sobremi" onClick={() => setNav(false)}>
                 Sobre mí
               </Link>
             </li>
             <li className="p-4 text-4xl">
-              <Link href="#servicios" onClick={() => setNav(false)}>
+              <Link href="/#servicios" onClick={() => setNav(false)}>
                 Servicios
               </Link>
             </li>
             <li className="p-4 text-4xl">
-              <Link href="#contacto" onClick={() => setNav(false)}>
+              <Link href="/#contacto" onClick={() => setNav(false)}>
                 Contacto
               </Link>
             </li>

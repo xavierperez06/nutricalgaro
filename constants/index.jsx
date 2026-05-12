@@ -56,7 +56,7 @@ export const reviews = [
     location: "Rosario, Santa Fe, Argentina",
     description: (
       <>
-        Deino mi experiencia de tratamiento con Belén como un amoroso recorrido
+        Defino mi experiencia de tratamiento con Belén como un amoroso recorrido
         por los desafíos de comprender la famosa frase{" "}
         <strong>"somos lo que comemos"</strong>. Cada encuentra renueva esa
         tarea que no es fácil y para la cual Belén es una excelente compañera y{" "}
