@@ -15,13 +15,14 @@ const ReviewSlider = ({ slideInfo }) => {
       showArrows={true}
       showIndicators={false}
       showStatus={false}
+      preventMovementUntilSwipeScrollTolerance={true}
       renderArrowPrev={(onClickHandler, hasPrev, label) =>
         hasPrev && (
           <button
             type="button"
             onClick={onClickHandler}
             title={label}
-            className="absolute top-1/2 left-0 z-10 flex -translate-y-1/2 cursor-pointer items-center justify-center p-2 text-gray-400 transition-colors hover:text-gray-900 sm:left-4"
+            className="absolute top-1/2 left-0 z-10 hidden -translate-y-1/2 cursor-pointer items-center justify-center p-2 text-gray-400 transition-colors hover:text-gray-900 sm:left-4 sm:flex"
           >
             <FaChevronLeft size={40} />
           </button>
@@ -33,7 +34,7 @@ const ReviewSlider = ({ slideInfo }) => {
             type="button"
             onClick={onClickHandler}
             title={label}
-            className="absolute top-1/2 right-0 z-10 flex -translate-y-1/2 cursor-pointer items-center justify-center p-2 text-gray-400 transition-colors hover:text-gray-900 sm:right-4"
+            className="absolute top-1/2 right-0 z-10 hidden -translate-y-1/2 cursor-pointer items-center justify-center p-2 text-gray-400 transition-colors hover:text-gray-900 sm:right-4 sm:flex"
           >
             <FaChevronRight size={40} />
           </button>
