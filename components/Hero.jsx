@@ -1,27 +1,82 @@
 "use client";
 
 import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { useInView, motion } from "framer-motion";
+import ButtonLink from "./common/ButtonLink";
 import AnimatedText from "./AnimatedText";
 
 const Hero = ({ title, message }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
+  // Helper function to find and style "nutricion integrativa"
+  const renderTitle = (text) => {
+    if (!text) return null;
+    const parts = text.split(/(nutrici[oó]n integrativa)/i);
+
+    return parts.map((part, i) =>
+      part.toLowerCase() === "nutricion integrativa" ||
+      part.toLowerCase() === "nutrición integrativa" ? (
+        <span
+          key={i}
+          className="mx-1 inline-block -rotate-2 transform rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-400 px-4 py-1 text-white shadow-md"
+        >
+          {part}
+        </span>
+      ) : (
+        part
+      ),
+    );
+  };
+
   return (
     <div
-      className="hero-img relative mb-12 flex h-screen items-center justify-center bg-cover bg-fixed"
+      className="hero-img relative mb-12 flex h-screen items-center justify-end overflow-hidden bg-cover bg-fixed"
       ref={ref}
     >
-      {/* overlay */}
-      <div className="absolute inset-0 z-2 bg-gradient-to-b from-black/70 via-black/30 to-black/70" />
-      <div className="z-2 -mt-40 p-5 text-white">
-        {title && <h1 className="text-6xl font-bold">{title}</h1>}
-        <AnimatedText
-          text={message}
-          className="inline-block py-5 text-left text-4xl text-white"
-          triggerAnimation={isInView}
-        />
+      {/* Main Glassmorphism Card */}
+      <div className="relative z-2 flex w-full items-center justify-center lg:justify-end lg:pr-20">
+        <div className="group flex max-w-[90%] flex-col items-center rounded-2xl border border-white/50 bg-white/55 p-10 text-center shadow-2xl backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:bg-white/50 hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] md:p-8 lg:max-w-3xl">
+          {title && (
+            <h1 className="mb-4 text-[34px] leading-[1.4] font-extrabold tracking-tight text-slate-700">
+              {renderTitle(title)}
+            </h1>
+          )}
+
+          <div className="mb-6 h-2 w-26 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-200 opacity-80 transition-all duration-500 group-hover:w-40" />
+
+          <AnimatedText
+            text={message}
+            className="inline-block py-2 text-left text-xl leading-relaxed font-medium text-slate-700"
+            triggerAnimation={isInView}
+          />
+          <ButtonLink href="/#servicios" className="mt-6">
+            Explorar servicios
+          </ButtonLink>
+        </div>
+      </div>
+
+      {/* Scrolling Text Marquee Container */}
+      <div className="absolute bottom-0 left-0 z-10 flex w-full overflow-hidden border-t border-white/30 bg-white/40 py-3 backdrop-blur-sm">
+        <motion.div
+          className="flex w-max whitespace-nowrap"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            repeat: Infinity,
+            ease: "linear",
+            duration: 25,
+          }}
+        >
+          {[...Array(6)].map((_, i) => (
+            <span
+              key={i}
+              className="mx-6 text-sm font-semibold tracking-[0.2em] text-slate-700 uppercase"
+            >
+              Entender tu cuerpo es el primer paso para cuidarlo mejor
+              <span className="mx-6 text-yellow-500">•</span>
+            </span>
+          ))}
+        </motion.div>
       </div>
     </div>
   );

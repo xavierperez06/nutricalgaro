@@ -9,8 +9,9 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Hero
-        title="Construyendo hábitos de autocuidado"
-        message={`Salud digestiva\nSanar vínculo mente cuerpo alimento\nSalud hormonal femenina`}
+        title="Nutrición integrativa para mejorar tu salud hormonal y digestiva desde hábitos sostenibles"
+        highlightedText="Nutrición integrativa"
+        message={`Te acompaño a identificar y construir hábitos de alimentación y estilo de vida sostenibles, adaptados a tu realidad y respaldados por la evidencia científica.\n\nMejorar la salud digestiva y hormonal puede tener un impacto positivo en tu bienestar general y tu salud reproductiva.`}
       />
       <div className="yello-bg flex flex-col items-center justify-center self-center text-center">
         <AboutMe />

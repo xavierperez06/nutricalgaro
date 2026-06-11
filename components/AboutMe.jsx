@@ -14,19 +14,30 @@ const AboutMe = () => {
     <section id="sobremi" ref={ref}>
       <div className="my-5 flex flex-col items-center justify-center text-center md:flex-row md:space-x-5 md:text-left lg:my-10 lg:ml-5 lg:py-16">
         <div className="rounded-full p-2 md:mt-2 md:w-1/2">
-          <Image
-            src={imgAboutMe}
-            alt="María Belén Calgaro - Nutricionista presencial y online en Rosario"
-            width={400}
-            height={400}
-            className="rounded-full lg:ml-24"
-            sizes="(max-width: 768px) 100vw, 400px"
-            style={{
-              width: "100%",
-              height: "auto",
-              maxWidth: "400px",
-            }}
-          />
+          <div className="hover-3d">
+            <Image
+              src={imgAboutMe}
+              alt="María Belén Calgaro - Nutricionista presencial y online en Rosario"
+              width={400}
+              height={400}
+              className="rounded-full lg:ml-24"
+              sizes="(max-width: 768px) 100vw, 400px"
+              style={{
+                width: "100%",
+                height: "auto",
+                maxWidth: "400px",
+              }}
+            />
+            {/* 8 empty divs needed for the 3D effect */}
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
         <div className="md:mt-2 md:w-3/5">
           <AnimatedText

@@ -40,22 +40,18 @@ const Navbar = ({ isHome = false }) => {
     >
       <div className="m-auto flex max-w-[1240px] items-center justify-between p-2 text-white">
         <Link href="/" className="flex pr-5">
-          <Image
-            src="/assets/images/NutriLogo.png"
-            alt="Nutricalgaro Logo"
-            width={80}
-            height={80}
-            className="object-contain"
-          />
           <div
             style={{ color: `${navTextColor}` }}
-            className="hidden items-center sm:flex md:text-xl"
+            className="hidden items-center font-bold sm:flex md:text-3xl"
           >
             <p>María Belén Calgaro</p>
           </div>
         </Link>
 
-        <ul style={{ color: `${navTextColor}` }} className="hidden sm:flex">
+        <ul
+          style={{ color: `${navTextColor}` }}
+          className="hidden align-middle text-xl sm:flex"
+        >
           <li className="p-4">
             <Link href="/" className="group">
               Inicio
