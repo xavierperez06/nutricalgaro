@@ -56,8 +56,8 @@ const Navbar = ({ isHome = false }) => {
       style={{ backgroundColor: `${navColor}` }}
       className={
         isHome
-          ? "fixed top-0 left-0 z-10 w-full backdrop-blur-md duration-300 ease-in"
-          : "top-0 left-0 w-full bg-white/85 shadow-xl backdrop-blur-md"
+          ? "fixed top-0 left-0 z-50 w-full backdrop-blur-md duration-300 ease-in"
+          : "sticky top-0 left-0 z-50 w-full bg-white/85 shadow-xl backdrop-blur-md"
       }
     >
       <div className="m-auto flex max-w-[1240px] items-center justify-between p-2 text-white">
