@@ -10,10 +10,10 @@ export const metadata = {
 const Recetarios = () => {
   return (
     <ServiceContent
-      title="Recetarios"
+      title="Recetarios con propósito"
       img={ImageRecetarios}
-      content="Guías de cocina saludable pensadas para inspirarte y facilitarte el camino hacia una alimentación más nutritiva.
-      Cada recetario está dedicado a una temática específica y reúne recetas sencillas, nutritivas y deliciosas, con indicaciones claras para que puedas ponerlas en práctica en tu día a día."
+      content="Recetarios inspiracionales para tu día a día.
+      Cada recetario está dedicado a una temática específica y reúne recetas sencillas, nutritivas y deliciosas, con indicaciones claras para que puedas ponerlas en práctica en tu cotidianidad."
     />
   );
 };

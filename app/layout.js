@@ -6,13 +6,26 @@ const raleway = Raleway({ subsets: ["latin"] });
 export const metadata = {
   title: {
     default:
-      "Nutricionista en Rosario | María Belén Calgaro | Salud Digestiva y Cambio de Hábitos",
+      "Nutricionista en Rosario | Salud hormonal, digestiva y hábitos sostenibles | María Belén Calgaro",
     template: "%s | Nutricalgaro",
   },
   description:
-    "Nutricionista en Rosario especializada en salud digestiva y cambio de hábitos. Atención presencial y online para sanar tu relación con la comida.",
+    "Nutricionista en Rosario especializada en salud hormonal femenina, salud digestiva y cambios de hábitos. Atención presencial y online con un enfoque integrativo basado en evidencia científica.",
   keywords: [
     "nutricionista Rosario",
+    "nutricionista online",
+    "nutricionista salud hormonal",
+    "nutricionista salud digestiva",
+    "nutricionista SOP",
+    "nutricionista endometriosis",
+    "síndrome de ovario poliquístico",
+    "nutrición hormonal femenina",
+    "salud hormonal femenina",
+    "salud digestiva",
+    "hábitos saludables",
+    "nutrición integrativa",
+    "consulta nutricional online",
+    "nutricionista Rosario, Santa Fe",
     "nutrición Rosario",
     "nutrición consciente",
     "salud digestiva Rosario",
@@ -23,8 +36,7 @@ export const metadata = {
     "nutricionista para digestión Rosario",
     "salud digestiva",
     "cambio de hábitos",
-    "alimentación consciente",
-    "atención online nutrición",
+    "María Belén Calgaro",
     "María Belén Calgaro nutricionista",
   ],
   metadataBase: new URL("https://www.nutricalgaro.com.ar"),
@@ -34,9 +46,9 @@ export const metadata = {
     shortcut: "/favicon.ico",
   },
   openGraph: {
-    title: "Nutricionista en Rosario | Nutricalgaro – Salud Digestiva",
+    title: "Nutricionista en Rosario | Salud hormonal y digestiva",
     description:
-      "Me especializo en acompañar procesos de salud digestiva y cambio de hábitos con atención presencial y online.",
+      "Nutricionista especializada en salud hormonal femenina y salud digestiva, con atención para personas que desean mejorar su bienestar a través de hábitos sostenibles y respaldados por evidencia científica.",
     url: "https://www.nutricalgaro.com.ar",
     siteName: "Nutricalgaro",
     locale: "es_AR",
@@ -52,9 +64,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nutricalgaro | Nutrición y Bienestar",
+    title: "Nutricionista en Rosario | Salud hormonal y digestiva",
     description:
-      "Te acompaño en tu camino hacia una alimentación saludable y consciente.",
+      "Atención presencial y online para acompañarte en la construcción de hábitos sostenibles que mejoren tu salud hormonal y digestiva.",
     images: ["/assets/images/HeroBanner.jpg"],
   },
 };
@@ -68,13 +80,17 @@ const structuredData = {
   image: "https://www.nutricalgaro.com.ar/assets/images/HeroBanner.jpg",
   url: "https://www.nutricalgaro.com.ar",
   sameAs: ["https://www.instagram.com/nutricalgaro"],
+  areaServed: {
+    "@type": "Country",
+    name: "Argentina",
+  },
   address: {
     "@type": "PostalAddress",
     addressLocality: "Rosario",
     addressCountry: "AR",
   },
   description:
-    "Nutricionista en Rosario especializada en salud digestiva, hábitos saludables y bienestar. Consultas online y presenciales.",
+    "Nutricionista en Rosario especializada en salud hormonal femenina, salud digestiva y cambio de hábitos sostenibles. Atención presencial y online.",
   availableService: {
     "@type": "MedicalTherapy",
     name: "Asesoramiento nutricional",

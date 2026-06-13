@@ -81,9 +81,9 @@ const AboutMe = () => {
               ayudarte a encontrar estrategias efectivas, realistas y
               sostenibles para tu vida cotidiana.
             </p>
-            {/* <ButtonLink href="/sobre-mi" className="mt-4">
+            <ButtonLink href="/sobre-mi" className="mt-4">
               Conocé mi historia
-            </ButtonLink> */}
+            </ButtonLink>
           </div>
         </div>
       </div>
