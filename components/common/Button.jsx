@@ -10,10 +10,10 @@ const Button = ({
       type={type}
       disabled={disabled}
       onClick={onClick}
-      className={`flex items-center justify-center rounded-md px-6 py-2.5 text-white transition-all duration-300 ease-out ${
+      className={`flex items-center justify-center rounded-xl px-6 py-2.5 font-semibold text-gray-900 transition-all duration-300 ease-out ${
         disabled
           ? "cursor-not-allowed bg-gray-400 opacity-70"
-          : "bg-primary-color-700 hover:bg-primary-color-800 cursor-pointer shadow-md hover:-translate-y-0.5 hover:shadow-lg active:scale-95" // 👈 Active state styling (matches Link)
+          : "bg-primary-color-700 hover:bg-primary-color-800 cursor-pointer shadow-md hover:-translate-y-0.5 hover:shadow-lg active:scale-95"
       } ${className}`}
     >
       {children}

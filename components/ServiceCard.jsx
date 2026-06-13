@@ -3,27 +3,28 @@ import ButtonLink from "./common/ButtonLink";
 
 const ServiceCard = ({ title, description, img, path }) => {
   return (
-    <div className="flex max-w-(--breakpoint-lg) flex-col-reverse justify-between rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(235,191,26,0.40)] lg:flex-row">
-      {" "}
-      <div className="flex flex-col justify-between p-6 text-left">
-        <h1 className="text-3xl font-bold">{title}</h1>
-        <p className="mt-6 text-justify">{description}</p>
-        <div>
-          <ButtonLink href={path} className="mt-6">
-            Leer más
-          </ButtonLink>
-        </div>
-      </div>
-      <div className="relative flex h-80 w-full justify-center p-4 lg:w-80">
-        <div className="relative aspect-2/1 w-96 overflow-hidden rounded-xl p-4">
-          <Image
-            src={img}
-            alt={`Servicio de nutrición: ${title}`}
-            fill
-            className="object-cover"
-            sizes="(min-width: 1024px) 384px, 90vw"
-            placeholder="blur"
-          />
+    <div className="card bg-base-100 border-base-200 group h-full w-96 overflow-hidden border shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <figure className="overflow-hidden">
+        <Image
+          src={img}
+          alt={title}
+          width={400}
+          height={300}
+          className="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+      </figure>
+
+      <div className="card-body text-content flex flex-col">
+        <h2 className="card-title group-hover:text-primary-color-700 text-2xl font-bold transition-colors duration-300">
+          {title}
+        </h2>
+
+        {/* Muted text slightly with opacity and added flex-grow to push actions down */}
+        <p className="flex-grow pt-2 text-left opacity-80">{description}</p>
+
+        {/* mt-auto guarantees the button anchors to the bottom, regardless of text length */}
+        <div className="card-actions mt-auto justify-end pt-4">
+          <ButtonLink href={path}>Conocé más</ButtonLink>
         </div>
       </div>
     </div>

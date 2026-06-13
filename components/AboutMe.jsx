@@ -5,6 +5,7 @@ import Image from "next/image";
 import AnimatedText from "./AnimatedText";
 import { useInView } from "framer-motion";
 import imgAboutMe from "@/public/assets/images/AboutMe.jpg";
+import ButtonLink from "./common/ButtonLink";
 
 const AboutMe = () => {
   const ref = useRef(null);
@@ -12,15 +13,15 @@ const AboutMe = () => {
 
   return (
     <section id="sobremi" ref={ref}>
-      <div className="my-5 flex flex-col items-center justify-center text-center md:flex-row md:space-x-5 md:text-left lg:my-10 lg:ml-5 lg:py-16">
-        <div className="rounded-full p-2 md:mt-2 md:w-1/2">
-          <div className="hover-3d">
+      <div className="my-5 flex flex-col items-center justify-center p-4 text-center md:gap-8 md:text-left lg:my-10 lg:ml-5 lg:flex-row lg:py-16">
+        <div className="flex justify-center rounded-full p-2 md:mt-2 lg:justify-end">
+          <div className="hover-3d w-full max-w-[400px]">
             <Image
               src={imgAboutMe}
               alt="María Belén Calgaro - Nutricionista presencial y online en Rosario"
               width={400}
               height={400}
-              className="rounded-full lg:ml-24"
+              className="rounded-full"
               sizes="(max-width: 768px) 100vw, 400px"
               style={{
                 width: "100%",
@@ -39,19 +40,51 @@ const AboutMe = () => {
             <div></div>
           </div>
         </div>
-        <div className="md:mt-2 md:w-3/5">
+
+        <div className="md:mt-2 lg:w-3/5">
           <AnimatedText
-            text="Hola, me llamo María Belén!"
-            className="mt-6 text-4xl font-bold md:mt-0 md:text-7xl"
+            text="Quién soy"
+            className="mt-6 text-2xl font-bold text-slate-700 md:mt-0 md:text-5xl"
             triggerAnimation={isInView}
           />
-          <p className="mt-4 mb-6 text-lg md:text-2xl">
-            Soy{" "}
-            <span className="text-main-color font-semibold">
-              Licenciada en Nutrición{" "}
-            </span>
-            y te ayudo a crear hábitos.
-          </p>
+          <div className="text-content l mt-3 mb-6 space-y-4 text-justify">
+            <p>
+              Soy{" "}
+              <span className="text-main-color text-xl font-semibold">
+                María Belén Calgaro
+              </span>
+              , <span className="font-semibold">Licenciada en Nutrición</span>{" "}
+              egresada de la Universidad Nacional del Litoral.
+            </p>
+            <p>
+              Desde <span className="font-semibold">hace más de 10 años</span>{" "}
+              acompaño a personas en{" "}
+              <span className="font-semibold">
+                procesos de cambio de hábitos
+              </span>
+              , ayudándolas a mejorar su salud desde una mirada integral y
+              basada en evidencia científica.
+            </p>
+            <p>
+              A lo largo de los años he confirmado algo que veo todos los días
+              en la consulta:{" "}
+              <span className="font-semibold">
+                la alimentación importa mucho, pero rara vez explica por sí sola
+                lo que le ocurre a una persona.
+              </span>{" "}
+              Por eso, además de la alimentación, trabajo considerando factores
+              como el descanso, el estrés, el movimiento, la salud emocional,
+              las rutinas y el contexto en el que cada persona vive.{" "}
+            </p>
+            <p className="text-center italic">
+              Mi objetivo es comprender qué puede estar influyendo en tu salud y
+              ayudarte a encontrar estrategias efectivas, realistas y
+              sostenibles para tu vida cotidiana.
+            </p>
+            {/* <ButtonLink href="/sobre-mi" className="mt-4">
+              Conocé mi historia
+            </ButtonLink> */}
+          </div>
         </div>
       </div>
     </section>

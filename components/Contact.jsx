@@ -72,7 +72,7 @@ const Contact = () => {
 
   return (
     <div className="m-auto max-w-[1240px] p-4 md:p-0">
-      <h1 className="p-4 text-center text-2xl font-bold">
+      <h1 className="p-4 text-center text-2xl font-bold text-slate-700">
         Escribe tu consulta
       </h1>
       <form className="m-auto max-w-[600px]" onSubmit={handleSubmit}>

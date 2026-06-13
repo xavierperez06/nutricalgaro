@@ -10,8 +10,8 @@ const Footer = () => {
           <Image
             src={"/assets/images/LogoFooter.png"}
             alt="Nutricalgaro Logo"
-            width={300}
-            height={300}
+            width={250}
+            height={250}
             className="object-contain"
           />
         </div>
@@ -19,9 +19,9 @@ const Footer = () => {
         <div className="flex w-full flex-1 flex-wrap gap-20 md:justify-end">
           {footerLinks.map((link) => (
             <div key={link.title} className="flex flex-col gap-6">
-              <h3 className="font-bold">{link.title}</h3>
+              <h3 className="text-2xl font-bold">{link.title}</h3>
               {link.links.map((item) => (
-                <Link key={item.title} href={item.url}>
+                <Link key={item.title} href={item.url} className="text-lg">
                   {item.title}
                 </Link>
               ))}

@@ -7,10 +7,10 @@ export const metadata = {
   },
 };
 
-const Presencial = () => {
+const Consultas = () => {
   return (
     <ServiceContent
-      title="Consultorio presencial"
+      title="Consultas"
       img={ImagePresencial}
       content="Un espacio para trabajar juntos en tu salud y bienestar.
 En el consultorio nos vemos cara a cara para conversar sobre tus objetivos, tu historia de salud y tu día a día. Trabajo con un enfoque centrado en el cambio de hábitos, a través de una planificación que se adapte a tu realidad.
@@ -20,4 +20,4 @@ Mi prioridad, como siempre, es que te sientas cómodo/a, escuchado/a y acompaña
     />
   );
 };
-export default Presencial;
+export default Consultas;

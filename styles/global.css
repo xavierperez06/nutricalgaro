@@ -9,10 +9,15 @@
     var(--tw-gradient-stops)
   );
 
+  --color-primary-color-100: #fffdf2;
   --color-primary-color-200: #fff8e1;
   --color-primary-color-300: #fae48d;
+  --color-primary-color-400: #f6db70;
+  --color-primary-color-500: #f2d253;
+  --color-primary-color-600: #efc837;
   --color-primary-color-700: #ebbf1a;
   --color-primary-color-800: #cda616;
+  --color-primary-color-900: #af8d12;
 }
 
 /*
@@ -52,7 +57,11 @@
 }
 
 .text-main-color {
-  color: #ebbf1a;
+  color: var(--color-primary-color-700);
+}
+
+.text-content {
+  @apply text-xl text-gray-600;
 }
 
 .yello-bg {

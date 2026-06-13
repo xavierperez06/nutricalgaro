@@ -5,7 +5,7 @@ import AnimatedText from "@/components/AnimatedText";
 const ServiceContent = ({ img, title, content }) => {
   return (
     <>
-      <div className="bg-primary-color-300 flex min-h-[200px] justify-center">
+      <div className="bg-primary-color-400 flex min-h-[200px] justify-center">
         <AnimatedText
           text={title}
           className="text-6xl font-bold text-white"

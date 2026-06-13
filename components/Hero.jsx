@@ -51,13 +51,13 @@ const Hero = ({ title, message }) => {
             triggerAnimation={isInView}
           />
           <ButtonLink href="/#servicios" className="mt-6">
-            Explorar servicios
+            Conocé mis servicios
           </ButtonLink>
         </div>
       </div>
 
       {/* Scrolling Text Marquee Container */}
-      <div className="absolute bottom-0 left-0 z-10 flex w-full overflow-hidden border-t border-white/30 bg-white/40 py-3 backdrop-blur-sm">
+      <div className="absolute bottom-0 left-0 z-2 flex w-full overflow-hidden border-t border-white/30 bg-white/40 py-3 backdrop-blur-sm">
         <motion.div
           className="flex w-max whitespace-nowrap"
           animate={{ x: ["0%", "-50%"] }}
