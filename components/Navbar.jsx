@@ -126,49 +126,83 @@ const Navbar = ({ isHome = false }) => {
         </ul>
 
         {/* Mobile Button */}
-        <div className="z-10 block sm:hidden" onClick={() => setNav(!nav)}>
+        <div
+          className="relative z-50 block cursor-pointer p-2 sm:hidden"
+          onClick={() => setNav(!nav)}
+        >
           {nav ? (
-            <AiOutlineClose style={{ color: `${navTextColor}` }} size={20} />
+            <AiOutlineClose
+              style={{ color: "white" }}
+              size={32}
+              className="rotate-90 transition-transform duration-300"
+            />
           ) : (
-            <AiOutlineMenu style={{ color: `${navTextColor}` }} size={20} />
+            <AiOutlineMenu
+              style={{ color: `${navTextColor}` }}
+              size={32}
+              className="transition-transform duration-300"
+            />
           )}
         </div>
+
         {/* Mobile Menu */}
         <div
           className={
             nav
-              ? "absolute top-0 right-0 bottom-0 left-0 flex h-screen w-full items-center justify-center bg-black text-center duration-300 ease-in sm:hidden"
-              : "absolute top-0 right-0 bottom-0 -left-full flex h-screen w-full items-center justify-center bg-black text-center duration-300 ease-in sm:hidden"
+              ? "fixed top-0 left-0 z-40 flex h-screen w-full flex-col items-center justify-center bg-slate-900/95 opacity-100 backdrop-blur-xl duration-500 ease-in-out sm:hidden"
+              : "fixed top-0 -left-full z-40 flex h-screen w-full flex-col items-center justify-center bg-slate-900/95 opacity-0 backdrop-blur-xl duration-500 ease-in-out sm:hidden"
           }
         >
-          <ul>
-            <li className="p-4 text-4xl">
-              <Link href="/" onClick={(e) => handleScroll(e, "top")}>
+          {/* Decorative Background Effects for Mobile Menu */}
+          <div className="pointer-events-none absolute top-20 left-10 h-64 w-64 rounded-full bg-[var(--color-primary-color-500)]/20 blur-3xl"></div>
+          <div className="pointer-events-none absolute right-10 bottom-20 h-64 w-64 rounded-full bg-amber-500/20 blur-3xl"></div>
+
+          <ul className="relative z-10 flex w-full flex-col items-center gap-8 px-6">
+            <li className="w-full text-center">
+              <Link
+                href="/"
+                onClick={(e) => handleScroll(e, "top")}
+                className="inline-block text-3xl font-bold tracking-wider text-white transition-all duration-300 hover:scale-110 hover:text-[var(--color-primary-color-400)]"
+              >
                 Inicio
               </Link>
             </li>
-            <li className="p-4 text-4xl">
+            <li className="w-full text-center">
               <Link
                 href="/#sobremi"
                 onClick={(e) => handleScroll(e, "sobremi")}
+                className="inline-block text-3xl font-bold tracking-wider text-white transition-all duration-300 hover:scale-110 hover:text-[var(--color-primary-color-400)]"
               >
                 Sobre mí
               </Link>
             </li>
-            <li className="p-4 text-4xl">
+            <li className="w-full text-center">
               <Link
                 href="/#servicios"
                 onClick={(e) => handleScroll(e, "servicios")}
+                className="inline-block text-3xl font-bold tracking-wider text-white transition-all duration-300 hover:scale-110 hover:text-[var(--color-primary-color-400)]"
               >
                 Servicios
               </Link>
             </li>
-            <li className="p-4 text-4xl">
+            <li className="w-full text-center">
               <Link
                 href="/#contacto"
                 onClick={(e) => handleScroll(e, "contacto")}
+                className="inline-block text-3xl font-bold tracking-wider text-white transition-all duration-300 hover:scale-110 hover:text-[var(--color-primary-color-400)]"
               >
                 Contacto
+              </Link>
+            </li>
+
+            {/* Mobile Social Link */}
+            <li className="mt-8">
+              <Link
+                href="https://www.instagram.com/nutricalgaro/"
+                target="_blank"
+                className="flex items-center justify-center rounded-full bg-white/10 p-4 text-white ring-1 ring-white/20 transition-all duration-300 hover:scale-110 hover:bg-[var(--color-primary-color-500)] hover:text-slate-900 hover:ring-transparent"
+              >
+                <FaInstagram size={32} />
               </Link>
             </li>
           </ul>

@@ -187,10 +187,7 @@ const historyData = [
 const SobreMi = () => {
   return (
     <section className="relative overflow-hidden bg-slate-50 py-6">
-      <div className="pointer-events-none absolute top-0 left-0 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--color-primary-color-200)]/40 opacity-50 mix-blend-multiply blur-3xl"></div>
-      <div className="pointer-events-none absolute right-0 bottom-0 h-[30rem] w-[30rem] translate-x-1/3 translate-y-1/3 rounded-full bg-amber-100/60 opacity-50 mix-blend-multiply blur-3xl"></div>
-
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
         <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left Column: Text Content */}
           <div className="flex flex-col items-start text-left">
@@ -241,7 +238,7 @@ const SobreMi = () => {
               />
             </div>
 
-            <div className="absolute -right-6 -bottom-6 flex items-center gap-3 rounded-2xl bg-white p-4 shadow-xl ring-1 ring-slate-900/5 sm:mr-5">
+            <div className="absolute -right-2 -bottom-6 flex items-center gap-3 rounded-2xl bg-white p-4 shadow-xl ring-1 ring-slate-900/5 sm:mr-5 lg:-right-6">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-primary-color-100)] text-[var(--color-primary-color-600)]">
                 <svg
                   className="h-6 w-6"
