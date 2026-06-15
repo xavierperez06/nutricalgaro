@@ -1,6 +1,7 @@
 import AboutMe from "@/public/assets/images/AboutMe_Page.webp";
 import NextImage from "next/image";
 import SectionHeader from "@/components/SectionHeader";
+import ButtonLink from "@/components/common/ButtonLink";
 
 // 1. We extract the repeating data into a clean array outside the component
 // to prevent it from being recreated on every render.
@@ -191,6 +192,29 @@ const SobreMi = () => {
         <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left Column: Text Content */}
           <div className="flex flex-col items-start text-left">
+            <div className="mb-8">
+              <ButtonLink
+                href="/"
+                variant="secondary"
+                className="!px-4 !py-2 text-sm !shadow-sm"
+              >
+                <svg
+                  className="mr-2 h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                  />
+                </svg>
+                Volver
+              </ButtonLink>
+            </div>
+
             <SectionHeader
               align="left"
               badgeText="Conocé mi historia"
