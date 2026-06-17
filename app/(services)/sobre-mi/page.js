@@ -220,17 +220,6 @@ const SobreMi = () => {
               align="left"
               badgeText="Conocé mi historia"
               title="La historia detrás de mi enfoque"
-              subtitle={
-                <>
-                  Soy{" "}
-                  <span className="font-bold text-[var(--color-primary-color-800)]">
-                    María Belén Calgaro
-                  </span>
-                  , Licenciada en Nutrición egresada de la Universidad Nacional
-                  del Litoral.
-                </>
-              }
-              highlightText="Mi objetivo es comprender qué puede estar influyendo en tu salud y ayudarte a encontrar estrategias efectivas, realistas y sostenibles para tu vida cotidiana."
             />
 
             {/* 2. Map through the data to render the history points dynamically */}
@@ -240,9 +229,7 @@ const SobreMi = () => {
                   <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary-color-50)] text-[var(--color-primary-color-600)] ring-1 ring-[var(--color-primary-color-200)]">
                     {item.icon}
                   </div>
-                  <p className="text-content text-justify leading-relaxed">
-                    {item.text}
-                  </p>
+                  <p className="text-content leading-relaxed">{item.text}</p>
                 </div>
               ))}
             </div>

@@ -60,24 +60,28 @@ const Consultas = () => {
           title="Consultas"
           subtitle="Online & Presencial"
         />
-        <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
-          <div className="text-content flex flex-col gap-6 text-justify">
+        <div className="grid items-start gap-12 p-2 lg:grid-cols-2 lg:gap-16">
+          <div className="text-content flex flex-col gap-6">
             <h2 className="text-4xl font-bold text-slate-700">
               ¿Cómo es una consulta?
             </h2>
             <p>
               En consulta conversamos sobre tus objetivos, tu historia de salud,
-              tu alimentación y los hábitos que forman parte de tu día a día. A
-              partir de esa información, elaboro un plan de alimentación y de
-              hábitos en el estilo de vida adaptado a tu realidad, y que estén
-              influyendo en tu salud, siempre con foco en cambios sostenibles en
-              el tiempo.
+              tu alimentación y hábitos que forman parte de tu día a día. A
+              partir de esa información, elaboro{" "}
+              <span className="font-semibold">un plan</span> de alimentación y
+              de hábitos en el estilo de vida, adaptado a tu realidad, y que
+              estén influyendo en tu salud, siempre{" "}
+              <span className="font-semibold">
+                con foco en cambios sostenibles
+              </span>{" "}
+              en el tiempo.
             </p>
             <p>
-              Si es necesario, revisamos estudios previos, sólicito análisis
+              Si es necesario, revisamos estudios previos, solicito análisis
               complementarios, realizamos mediciones que aporten información
               relevante para el abordaje o indico suplementación oportuna. Así
-              mismo, si el mótivo de consulta lo amerita, puedo sugerir la
+              mismo, si el motivo de consulta lo amerita, puedo sugerir la
               consulta con otros profesionales que complementen el proceso de
               atención.
             </p>
@@ -105,7 +109,7 @@ const Consultas = () => {
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
-          <div className="text-content order-first flex flex-col gap-6 text-justify lg:order-last">
+          <div className="text-content order-first flex flex-col gap-6 p-2 lg:order-last">
             <h2 className="text-4xl font-bold text-slate-700">
               ¿Qué incluye la consulta?
             </h2>
