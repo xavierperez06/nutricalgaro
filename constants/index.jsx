@@ -135,13 +135,14 @@ export const services = [
   {
     title: "Talleres",
     description:
-      "Encuentros grupales online diseñados para profundizar en temas específicos de salud y nutrición.",
+      "Espacios de aprendizaje, en vivo y grabados, con herramientas prácticas para transformar la información en acción en torno a la nutrición y la salud.",
     img: imgTalleres,
     path: "/talleres",
   },
   {
-    title: "Recetarios & Guías",
-    description: "Recetarios inspiracionales para tu día a día.",
+    title: "Recursos para tu bienestar",
+    description:
+      "Recursos creados para acompañarte más allá de la consulta, con herramientas concretas para organizarte, cocinar y cuidar de tu salud.",
     img: imgRecetas,
     path: "/recetarios",
   },

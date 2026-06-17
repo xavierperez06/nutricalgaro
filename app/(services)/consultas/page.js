@@ -55,8 +55,30 @@ const Consultas = () => {
   return (
     <section className="bg-slate-50 px-4 py-12 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
+        <div className="mb-8">
+          <ButtonLink
+            href="/"
+            variant="secondary"
+            className="!px-4 !py-2 text-sm !shadow-sm"
+          >
+            <svg
+              className="mr-2 h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              />
+            </svg>
+            Volver
+          </ButtonLink>
+        </div>
         <SectionHeader
-          badgeText="Repensá tus hábitos"
+          badgeText="Construí hábitos sostenibles"
           title="Consultas"
           subtitle="Online & Presencial"
         />

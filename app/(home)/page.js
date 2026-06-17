@@ -11,7 +11,7 @@ export default function Home() {
       <Hero
         title="Nutrición integrativa para mejorar tu salud hormonal y digestiva desde hábitos sostenibles"
         highlightedText="Nutrición integrativa"
-        message={`Te acompaño a identificar y construir hábitos de alimentación y estilo de vida sostenibles, adaptados a tu realidad y respaldados por la evidencia científica.\n\nMejorar la salud digestiva y hormonal puede tener un impacto positivo en tu bienestar general y tu salud reproductiva.`}
+        message={`Te acompaño a identificar y construir hábitos de alimentación y estilo de vida sostenibles, adaptados a tu realidad y respaldados por la evidencia científica.\n\nMejorar tu salud digestiva y hormonal puede tener un impacto positivo en tu bienestar general y tu salud reproductiva.`}
       />
       <div className="yello-bg flex flex-col items-center justify-center self-center text-center">
         <AboutMe />
@@ -25,7 +25,7 @@ export default function Home() {
             </h2>
             <div className="mx-auto flex max-w-3xl items-center justify-center gap-6 py-4">
               <div className="hidden h-[2px] flex-1 rounded-full bg-gradient-to-r from-transparent to-[#FAE48D] md:block"></div>
-              <p className="max-w-xl text-center text-lg font-light text-gray-600 md:text-xl">
+              <p className="max-w-xl text-center text-xl font-light text-gray-600">
                 Encontrá la modalidad de acompañamiento que mejor se adapte a{" "}
                 {""}
                 <span className="font-semibold">tus necesidades</span> y al

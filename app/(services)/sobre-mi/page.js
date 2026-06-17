@@ -87,7 +87,7 @@ const historyData = [
         Con el tiempo, mi práctica fue orientándose hacia{" "}
         <strong className="font-semibold">dos áreas</strong> que{" "}
         <strong className="font-semibold">
-          hoy constituyen el núcleo de mi trabajo
+          hoy constituyen el núcleo de mi trabajo y estudio
         </strong>
         : la salud hormonal femenina y la salud digestiva.
       </>
@@ -179,7 +179,7 @@ const historyData = [
         <span className="font-semibold">he desarrollado </span>
         talleres, masterclass y otros recursos digitales para acercar{" "}
         <span className="font-semibold">herramientas prácticas</span> que
-        faciliten la organización, el autocuidado y la construcción de hábitos
+        facilitan la organización, el autocuidado y la construcción de hábitos
         sostenibles.
       </>
     ),
@@ -225,7 +225,7 @@ const SobreMi = () => {
             {/* 2. Map through the data to render the history points dynamically */}
             <div className="space-y-6">
               {historyData.map((item) => (
-                <div key={item.id} className="flex gap-4">
+                <div key={item.id} className="flex gap-1">
                   <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary-color-50)] text-[var(--color-primary-color-600)] ring-1 ring-[var(--color-primary-color-200)]">
                     {item.icon}
                   </div>
