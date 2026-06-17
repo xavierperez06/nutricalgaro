@@ -9,9 +9,7 @@ const HighlightImage = ({
   cardText,
 }) => {
   return (
-    <div
-      className={`relative mx-auto w-full max-w-md lg:max-w-none ${className}`}
-    >
+    <div className={`relative mx-auto w-full max-w-md ${className}`}>
       <div className="absolute -top-4 -right-4 h-full w-full rounded-3xl border-2 border-[var(--color-primary-color-200)] bg-transparent"></div>
       <div className="absolute -bottom-4 -left-4 h-full w-full rounded-3xl bg-amber-100/50"></div>
 
@@ -21,7 +19,7 @@ const HighlightImage = ({
           alt={alt}
           fill
           className="object-cover transition duration-700 hover:scale-105"
-          quality={100}
+          quality={90}
           sizes={sizes}
         />
       </div>
