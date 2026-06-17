@@ -127,7 +127,8 @@ export const reviews = [
 export const services = [
   {
     title: "Consultas",
-    description: "Un espacio para trabajar juntos en tu salud y bienestar.",
+    description:
+      "Un espacio para trabajar juntos en tu alimentación y salud de mandera personalizada.",
     img: imgPresencial,
     path: "/consultas",
   },

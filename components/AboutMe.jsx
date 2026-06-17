@@ -76,7 +76,7 @@ const AboutMe = () => {
               como el descanso, el estrés, el movimiento, la salud emocional,
               las rutinas y el contexto en el que cada persona vive.{" "}
             </p>
-            <p className="text-center italic">
+            <p className="text-center text-gray-500 italic">
               Mi objetivo es comprender qué puede estar influyendo en tu salud y
               ayudarte a encontrar estrategias efectivas, realistas y
               sostenibles para tu vida cotidiana.

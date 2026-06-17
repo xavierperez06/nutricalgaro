@@ -19,10 +19,8 @@ const ServiceCard = ({ title, description, img, path }) => {
           {title}
         </h2>
 
-        {/* Muted text slightly with opacity and added flex-grow to push actions down */}
         <p className="flex-grow pt-2 text-left opacity-80">{description}</p>
 
-        {/* mt-auto guarantees the button anchors to the bottom, regardless of text length */}
         <div className="card-actions mt-auto justify-end pt-4">
           <ButtonLink href={path}>Conocé más</ButtonLink>
         </div>
