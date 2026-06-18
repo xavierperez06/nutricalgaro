@@ -7,6 +7,7 @@ const HighlightImage = ({
   sizes,
   cardTitle,
   cardText,
+  placeholder = "blur",
 }) => {
   return (
     <div className={`relative mx-auto w-full max-w-md ${className}`}>
@@ -17,6 +18,7 @@ const HighlightImage = ({
         <NextImage
           src={src}
           alt={alt}
+          placeholder={placeholder}
           fill
           className="object-cover transition duration-700 hover:scale-105"
           quality={90}

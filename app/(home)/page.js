@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section className="mb-8 flex min-h-[500px] flex-col items-center justify-center bg-gradient-to-b from-[#FAE48D] to-[#f7db69] px-4 py-20">
+      <section className="flex min-h-[500px] flex-col items-center justify-center bg-gradient-to-b from-[#FAE48D] to-[#f7db69] px-4 py-10 md:py-20">
         <div className="w-full max-w-5xl">
           <h2 className="mb-12 text-center text-3xl font-extrabold tracking-tight text-slate-700 sm:text-5xl">
             Amables palabras de mis pacientes

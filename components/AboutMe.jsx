@@ -47,7 +47,7 @@ const AboutMe = () => {
             className="mt-6 text-2xl font-bold text-slate-700 md:mt-0 md:text-5xl"
             triggerAnimation={isInView}
           />
-          <div className="text-content l mt-3 mb-6 space-y-4 text-justify">
+          <div className="text-content l mt-3 space-y-4 text-justify md:mb-6">
             <p>
               Soy{" "}
               <span className="text-main-color text-xl font-semibold">
@@ -81,9 +81,11 @@ const AboutMe = () => {
               ayudarte a encontrar estrategias efectivas, realistas y
               sostenibles para tu vida cotidiana.
             </p>
-            <ButtonLink href="/sobre-mi" className="mt-4">
-              Conocé mi historia
-            </ButtonLink>
+            <div className="mt-8 flex justify-center md:justify-start">
+              <ButtonLink href="/sobre-mi" className="shadow-md">
+                Conocé mi historia
+              </ButtonLink>
+            </div>
           </div>
         </div>
       </div>

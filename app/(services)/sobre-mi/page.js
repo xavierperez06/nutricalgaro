@@ -237,7 +237,7 @@ const SobreMi = () => {
 
           {/* Right Column: Image/Visuals */}
           <HighlightImage
-            className="lg:max-w-none"
+            className="md:mt-30 lg:max-w-none"
             src={AboutMe}
             alt="María Belén Calgaro - Nutricionista presencial y online en Rosario"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

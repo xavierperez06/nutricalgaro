@@ -42,7 +42,7 @@ const ReviewSlider = ({ slideInfo }) => {
       }
     >
       {slideInfo.map((review, index) => (
-        <div key={index} className="py-8">
+        <div key={index} className="px-2 py-8">
           <ReviewCard
             age={review.age}
             location={review.location}
