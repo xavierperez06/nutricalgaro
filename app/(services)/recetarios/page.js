@@ -1,5 +1,5 @@
 import ServiceContent from "@/components/ServiceContent";
-import ImageRecetarios from "@/public/assets/images/Recetas.jpg";
+import ImageRecetarios from "@/public/assets/images/Recetas_Card.webp";
 
 export const metadata = {
   title: {
