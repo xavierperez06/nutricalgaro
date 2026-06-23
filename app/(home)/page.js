@@ -1,9 +1,10 @@
 import Hero from "@/components/Hero";
-import ServiceCard from "@/components/ServiceCard";
+import Card from "@/components/Card";
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
 import ReviewSlider from "@/components/ReviewSlider";
 import { reviews, services } from "@/constants";
+import Button from "@/components/common/Button";
 
 export default function Home() {
   return (
@@ -26,10 +27,10 @@ export default function Home() {
             <div className="mx-auto flex max-w-3xl items-center justify-center gap-6 py-4">
               <div className="hidden h-[2px] flex-1 rounded-full bg-gradient-to-r from-transparent to-[#FAE48D] md:block"></div>
               <p className="max-w-xl text-center text-xl font-light text-gray-600">
-                Encontrá la modalidad de acompañamiento que mejor se adapte a{" "}
-                {""}
-                <span className="font-semibold">tus necesidades</span> y al
-                momento en el que te encontrás.
+                Encontrá la modalidad de{" "}
+                <span className="font-semibold">acompañamiento</span> que mejor
+                se adapte {""}
+                <span className="font-semibold">a tu necesidad</span> hoy.
               </p>
               <div className="hidden h-[2px] flex-1 rounded-full bg-gradient-to-l from-transparent to-[#FAE48D] md:block"></div>
             </div>
@@ -37,12 +38,14 @@ export default function Home() {
           <div className="mt-4 grid grid-cols-1 items-center justify-center gap-6 px-4 lg:grid-cols-2 xl:grid-cols-3">
             {services.map((service) => {
               return (
-                <ServiceCard
+                <Card
                   key={service.title}
                   title={service.title}
                   description={service.description}
+                  primaryAction={
+                    <Button href={service.path}>Conocé más</Button>
+                  }
                   img={service.img}
-                  path={service.path}
                 />
               );
             })}

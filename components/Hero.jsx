@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
-import ButtonLink from "./common/ButtonLink";
+import Button from "./common/Button";
 import AnimatedText from "./AnimatedText";
 
 const Hero = ({ title, message }) => {
@@ -50,9 +50,9 @@ const Hero = ({ title, message }) => {
             className="inline-block text-left text-xl leading-relaxed font-medium text-slate-700"
             triggerAnimation={isInView}
           />
-          <ButtonLink href="/#servicios" className="mt-6">
+          <Button href="/#servicios" className="mt-6">
             Conocé mis servicios
-          </ButtonLink>
+          </Button>
         </div>
       </div>
 

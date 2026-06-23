@@ -1,6 +1,6 @@
-import imgRecetas from "@/public/assets/images/Recetas.jpg";
-import imgTalleres from "@/public/assets/images/TalleresAvatar.png";
-import imgPresencial from "@/public/assets/images/Presencial.jpg";
+import imgRecetas from "@/public/assets/images/Recetas_Card.webp";
+import imgTalleres from "@/public/assets/images/Talleres_Card.webp";
+import imgPresencial from "@/public/assets/images/Presencial_Card.webp";
 
 export const footerLinks = [
   {

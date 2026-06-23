@@ -4,8 +4,8 @@ import { useRef } from "react";
 import Image from "next/image";
 import AnimatedText from "./AnimatedText";
 import { useInView } from "framer-motion";
-import imgAboutMe from "@/public/assets/images/AboutMe.jpg";
-import ButtonLink from "./common/ButtonLink";
+import imgAboutMe from "@/public/assets/images/AboutMe.webp";
+import Button from "./common/Button";
 
 const AboutMe = () => {
   const ref = useRef(null);
@@ -82,9 +82,9 @@ const AboutMe = () => {
               sostenibles para tu vida cotidiana.
             </p>
             <div className="mt-8 flex justify-center md:justify-start">
-              <ButtonLink href="/sobre-mi" className="shadow-md">
+              <Button href="/sobre-mi" className="shadow-md">
                 Conocé mi historia
-              </ButtonLink>
+              </Button>
             </div>
           </div>
         </div>

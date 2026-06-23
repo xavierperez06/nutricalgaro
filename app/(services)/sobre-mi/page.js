@@ -1,7 +1,7 @@
 import AboutMe from "@/public/assets/images/AboutMe_Page.webp";
 
 import SectionHeader from "@/components/SectionHeader";
-import ButtonLink from "@/components/common/ButtonLink";
+import Button from "@/components/common/Button";
 import HighlightImage from "@/components/common/HighlightImage";
 
 // 1. We extract the repeating data into a clean array outside the component
@@ -194,7 +194,7 @@ const SobreMi = () => {
           {/* Left Column: Text Content */}
           <div className="flex flex-col items-start text-left">
             <div className="mb-8">
-              <ButtonLink
+              <Button
                 href="/"
                 variant="secondary"
                 className="!px-4 !py-2 text-sm !shadow-sm"
@@ -213,7 +213,7 @@ const SobreMi = () => {
                   />
                 </svg>
                 Volver
-              </ButtonLink>
+              </Button>
             </div>
 
             <SectionHeader
@@ -232,6 +232,29 @@ const SobreMi = () => {
                   <p className="text-content leading-relaxed">{item.text}</p>
                 </div>
               ))}
+            </div>
+            <div className="mt-10 flex w-full justify-center">
+              <Button
+                href="/#servicios"
+                variant="flashy"
+                className="group gap-3"
+              >
+                <svg
+                  className="h-6 w-6 shrink-0 text-white transition-transform group-hover:scale-110"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {/* Replaced Calendar with a Clipboard-Check icon to better represent personalized plans and services */}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                  />
+                </svg>
+                <span>Conocé mis servicios</span>
+              </Button>
             </div>
           </div>
 

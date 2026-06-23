@@ -6,15 +6,16 @@ const SectionHeader = ({
   subtitle,
   highlightText,
   align = "center",
+  mb = "mb-10",
 }) => {
   const isCenter = align === "center";
 
   return (
     <div
-      className={`flex flex-col ${isCenter ? "mx-auto mb-10 max-w-3xl items-center justify-center text-center" : "w-full items-start text-left"}`}
+      className={`flex flex-col ${mb} ${isCenter ? "mx-auto max-w-3xl items-center justify-center text-center" : "w-full items-start text-left"}`}
     >
       {badgeText && (
-        <span className="mb-4 rounded-full bg-[var(--color-primary-color-200)] px-4 py-1.5 text-sm font-bold tracking-wider text-[var(--color-primary-color-600)] uppercase shadow-sm">
+        <span className="mb-4 inline-block rounded-full border border-[var(--color-primary-color-600)]/20 bg-[var(--color-primary-color-600)]/10 px-3 py-1 text-xs font-bold tracking-widest text-[var(--color-primary-color-600)] uppercase">
           {badgeText}
         </span>
       )}
@@ -22,7 +23,11 @@ const SectionHeader = ({
         {title}
       </h2>
       {subtitle && (
-        <p className="text-content mb-6 !text-2xl font-medium">{subtitle}</p>
+        <p
+          className={`text-content !text-2xl font-medium ${highlightText ? "mb-6" : "mb-0"}`}
+        >
+          {subtitle}
+        </p>
       )}
       {highlightText && (
         <HightlightCard

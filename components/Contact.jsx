@@ -106,7 +106,11 @@ const Contact = () => {
           placeholder="Mensaje"
         ></textarea>
         <div>
-          <Button type="submit" disabled={sendingEmail} className="mt-2 w-full">
+          <Button
+            type="submit"
+            disabled={sendingEmail}
+            className="mt-2 w-full"
+          >
             {sendingEmail ? "Enviando..." : "Enviar"}
           </Button>
         </div>

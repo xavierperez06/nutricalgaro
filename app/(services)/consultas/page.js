@@ -1,8 +1,8 @@
 import SectionHeader from "@/components/SectionHeader";
-import ButtonLink from "@/components/common/ButtonLink";
+import Button from "@/components/common/Button";
 import HighlightImage from "@/components/common/HighlightImage";
-import ConsultasImage1 from "@/public/assets/images/Consultas_Pic01.jpg";
-import ConsultasImage2 from "@/public/assets/images/Consultas_Pic02.jpg";
+import ConsultasImage1 from "@/public/assets/images/Consultas_Pic01.webp";
+import ConsultasImage2 from "@/public/assets/images/Consultas_Pic02.webp";
 
 export const metadata = {
   title: {
@@ -26,7 +26,7 @@ const consultationDetails = [
 
 const renderReservationButton = () => (
   <div className="flex justify-center">
-    <ButtonLink
+    <Button
       href={whatsappUrl}
       variant="flashy"
       target="_blank"
@@ -47,7 +47,7 @@ const renderReservationButton = () => (
         />
       </svg>
       <span>Reservá tu consulta</span>
-    </ButtonLink>
+    </Button>
   </div>
 );
 
@@ -56,7 +56,7 @@ const Consultas = () => {
     <section className="bg-slate-50 px-4 py-12 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="mb-8">
-          <ButtonLink
+          <Button
             href="/"
             variant="secondary"
             className="!px-4 !py-2 text-sm !shadow-sm"
@@ -75,7 +75,7 @@ const Consultas = () => {
               />
             </svg>
             Volver
-          </ButtonLink>
+          </Button>
         </div>
         <SectionHeader
           badgeText="Construí hábitos sostenibles"

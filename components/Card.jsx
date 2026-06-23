@@ -1,7 +1,13 @@
 import Image from "next/image";
-import ButtonLink from "./common/ButtonLink";
+import Button from "./common/Button";
 
-const ServiceCard = ({ title, description, img, path }) => {
+const Card = ({
+  title,
+  description,
+  img,
+  primaryAction, // Expects a React component
+  secondaryAction, // Expects a React component
+}) => {
   return (
     <div className="card bg-base-100 border-base-200 group h-full w-96 overflow-hidden border shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
       <figure className="overflow-hidden">
@@ -21,12 +27,15 @@ const ServiceCard = ({ title, description, img, path }) => {
 
         <p className="flex-grow pt-2 text-left opacity-80">{description}</p>
 
-        <div className="card-actions mt-auto justify-end pt-4">
-          <ButtonLink href={path}>Conocé más</ButtonLink>
+        <div
+          className={`card-actions mt-auto ${secondaryAction ? "justify-between" : "justify-end"} pt-4`}
+        >
+          {secondaryAction}
+          {primaryAction}
         </div>
       </div>
     </div>
   );
 };
 
-export default ServiceCard;
+export default Card;
