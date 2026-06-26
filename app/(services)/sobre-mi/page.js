@@ -197,7 +197,7 @@ const SobreMi = () => {
               <Button
                 href="/"
                 variant="secondary"
-                className="!px-4 !py-2 text-sm !shadow-sm"
+                className="!px-4 !py-2 !shadow-sm"
               >
                 <svg
                   className="mr-2 h-4 w-4"

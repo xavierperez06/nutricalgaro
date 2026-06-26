@@ -42,7 +42,7 @@ const WhatsAppChat = ({ onClose, isClosing }) => {
           <div className="w-10">
             <Image
               className="rounded-full"
-              src="/assets/images/AboutMe.jpg"
+              src="/assets/images/AboutMe.webp"
               alt=""
               width={300}
               height={300}

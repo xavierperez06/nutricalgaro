@@ -7,9 +7,7 @@ const ReviewCard = ({ name, age, location, review }) => {
         <div className="mt-1 mb-4 flex justify-center">
           <FaQuoteLeft size={40} className="text-primary-color-700" />
         </div>
-        <p className="text-content mb-6 text-justify text-lg leading-relaxed">
-          {review}
-        </p>
+        <p className="text-content mb-6 text-lg leading-relaxed">{review}</p>
         <div className="flex flex-col items-center">
           <p className="text-base font-bold text-gray-900">{name}</p>
           <p className="text-sm font-medium text-gray-500">

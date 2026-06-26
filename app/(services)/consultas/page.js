@@ -59,7 +59,7 @@ const Consultas = () => {
           <Button
             href="/"
             variant="secondary"
-            className="!px-4 !py-2 text-sm !shadow-sm"
+            className="!px-4 !py-2 !shadow-sm"
           >
             <svg
               className="mr-2 h-4 w-4"
@@ -88,11 +88,11 @@ const Consultas = () => {
               ¿Cómo es una consulta?
             </h2>
             <p>
-              En consulta conversamos sobre tus objetivos, tu historia de salud,
-              tu alimentación y hábitos que forman parte de tu día a día. A
-              partir de esa información, elaboro{" "}
-              <span className="font-semibold">un plan</span> de alimentación y
-              de hábitos en el estilo de vida, adaptado a tu realidad, y que
+              En consulta conversamos sobre tus objetivos, tu historia de
+              salud-enfermedad, tu alimentación y hábitos que forman parte de tu
+              día a día, tu rutina. A partir de esa información, elaboro{" "}
+              <span className="font-semibold">un plan</span>, adaptado a tu
+              realidad, de alimentación y de hábitos en el estilo de vida que
               estén influyendo en tu salud, siempre{" "}
               <span className="font-semibold">
                 con foco en cambios sostenibles

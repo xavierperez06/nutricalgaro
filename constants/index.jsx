@@ -102,7 +102,7 @@ export const reviews = [
         y probar nuevos alimentos. Además,{" "}
         <strong>
           el enfoque interdisciplinario hizo que mejoraran muchísimo mis
-          síntomas. ¡Estoy muy agradecida!.
+          síntomas. ¡Estoy muy agradecida!
         </strong>
       </>
     ),
@@ -122,13 +122,31 @@ export const reviews = [
       </>
     ),
   },
+  {
+    name: "Gisel",
+    age: 34,
+    location: "Rosario, Santa Fe, Argentina",
+    description: (
+      <>
+        Más que una nutricionista, una verdadera compañera de procesos de
+        cambio. Belu me acompañó de manera calida, cercana y comprometida e hizo
+        que cada consulta me sienta acompañada y con una atención personalizada.{" "}
+        <span className="font-semibold">
+          Siempre sentí que jugaba para mi equipo, ayudandome a avanzar con
+          paciencia, empatía y objetivos realistas
+        </span>
+        . Gracias a su acompañamiento, mejorar mis hábitos fué un camino mucho
+        mas ameno y sostenible. Muy agradecida por cada paso dado juntas
+      </>
+    ),
+  },
 ];
 
 export const services = [
   {
     title: "Consultas",
     description:
-      "Un espacio para trabajar juntos en tu alimentación y salud de manera personalizada.",
+      "Un espacio para trabajar juntos en tu alimentación y salud de manera personalizada e integral.",
     img: imgPresencial,
     path: "/consultas",
   },
