@@ -12,7 +12,7 @@ export default function Home() {
       <Hero
         title="Nutrición integrativa para mejorar tu salud hormonal y digestiva desde hábitos sostenibles"
         highlightedText="Nutrición integrativa"
-        message={`Te acompaño a identificar y construir hábitos de alimentación y estilo de vida sostenibles, adaptados a tu realidad y respaldados por la evidencia científica.\n\nMejorar tu salud digestiva y hormonal puede tener un impacto positivo en tu bienestar general y tu salud reproductiva.`}
+        message={`Te acompaño a identificar y construir hábitos de alimentación y estilo de vida sostenibles, adaptados a tu realidad y respaldados por la evidencia científica.\nMejorar tu salud digestiva y hormonal puede tener un impacto positivo en tu bienestar general y tu salud reproductiva.`}
       />
       <div className="yello-bg flex flex-col items-center justify-center self-center text-center">
         <AboutMe />

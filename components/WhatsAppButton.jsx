@@ -38,7 +38,7 @@ const WhatsAppButton = () => {
         {showHint && (
           <div className="mb-3 flex flex-col items-end">
             <button
-              className="mr-1 mb-1 cursor-pointer text-white/80 transition-colors hover:text-white"
+              className="mr-1 mb-1 cursor-pointer text-gray-300 transition-colors hover:text-gray-200"
               aria-label="Close"
               onClick={() => setShowHint(false)}
             >
@@ -48,7 +48,7 @@ const WhatsAppButton = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={2.5}
                 stroke="currentColor"
-                className="h-4 w-4"
+                className="h-4 w-4 drop-shadow-lg"
               >
                 <path
                   strokeLinecap="round"

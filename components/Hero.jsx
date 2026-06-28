@@ -31,11 +31,11 @@ const Hero = ({ title, message }) => {
 
   return (
     <div
-      className="hero-img relative mb-12 flex h-screen items-center justify-end overflow-hidden bg-cover bg-fixed"
+      className="hero-img relative mb-12 flex h-screen items-start justify-end overflow-hidden bg-cover bg-fixed pt-24 md:items-center md:pt-0"
       ref={ref}
     >
       {/* Main Glassmorphism Card */}
-      <div className="relative z-2 flex w-full items-center justify-center lg:justify-end lg:pr-20">
+      <div className="relative z-2 flex w-full justify-center lg:justify-end lg:pr-20">
         <div className="group flex max-w-[90%] flex-col items-center rounded-2xl border border-white/50 bg-white/55 p-4 text-center shadow-2xl backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:bg-white/50 hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] lg:max-w-2xl xl:max-w-3xl xl:p-6 2xl:p-10">
           {title && (
             <h1 className="mb-4 text-2xl leading-[1.4] font-extrabold tracking-tight text-slate-700 lg:text-3xl 2xl:text-[34px]">
@@ -47,7 +47,7 @@ const Hero = ({ title, message }) => {
 
           <AnimatedText
             text={message}
-            className="inline-block text-left text-xl leading-relaxed font-medium text-slate-700"
+            className="inline-block text-left text-lg leading-relaxed font-medium text-slate-700 md:text-xl"
             triggerAnimation={isInView}
           />
           <Button href="/#servicios" className="mt-6">

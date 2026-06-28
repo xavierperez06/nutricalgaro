@@ -5,6 +5,7 @@ const Button = ({
   children,
   variant = "primary",
   className = "",
+  type = "button",
   ...props
 }) => {
   const baseStyles =
@@ -21,6 +22,22 @@ const Button = ({
 
   const combinedClasses = `${baseStyles} ${variants[variant]} ${className}`;
 
+  const isExternal = typeof href === "string" && href.startsWith("http");
+
+  if (isExternal) {
+    return (
+      <a
+        href={href}
+        className={combinedClasses}
+        target="_blank"
+        rel="noopener noreferrer"
+        {...props}
+      >
+        {children}
+      </a>
+    );
+  }
+
   if (href) {
     return (
       <Link href={href} className={combinedClasses} {...props}>
@@ -29,9 +46,8 @@ const Button = ({
     );
   }
 
-  // If no href is provided, render a standard button
   return (
-    <button className={combinedClasses} {...props}>
+    <button type={type} className={combinedClasses} {...props}>
       {children}
     </button>
   );

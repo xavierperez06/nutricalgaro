@@ -21,7 +21,7 @@ const WhatsAppChat = ({ onClose, isClosing }) => {
     const encodedMessage = `https://wa.me/5493416757952?text=${encodeURIComponent(
       message,
     )}`;
-    window.open(encodedMessage, "_blank");
+    window.open(encodedMessage, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -43,9 +43,10 @@ const WhatsAppChat = ({ onClose, isClosing }) => {
             <Image
               className="rounded-full"
               src="/assets/images/AboutMe.webp"
-              alt=""
-              width={300}
-              height={300}
+              alt="M.B Calgaro"
+              width={40}
+              height={40}
+              sizes="40px"
             />
           </div>
         </div>

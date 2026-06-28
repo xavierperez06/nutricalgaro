@@ -33,13 +33,13 @@ const AnimatedText = ({ text, className = "", triggerAnimation = false }) => {
   return (
     <div className="flex items-center overflow-hidden py-2">
       <motion.h2
-        className={`inline-block text-black ${className}`}
+        className={`inline-block gap-2 text-black ${className}`}
         variants={textAnimation}
         initial="initial"
         animate={triggerAnimation ? "animate" : "initial"}
       >
         {text.split("\n").map((line, lineIdx) => (
-          <span key={`line-${lineIdx}`}>
+          <span key={`line-${lineIdx}`} className="mb-4 block last:mb-0">
             {line.split(" ").map((word, wordIdx) => (
               <motion.span
                 key={`word-${lineIdx}-${wordIdx}`}

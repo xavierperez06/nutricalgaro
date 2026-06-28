@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Button from "./common/Button";
 
 const Card = ({
   title,
@@ -10,13 +9,13 @@ const Card = ({
   badgeText,
 }) => {
   return (
-    <div className="indicator h-full w-full">
+    <div className="indicator group h-full w-full">
       {badgeText && (
-        <span className="indicator-item indicator-center md:indicator-end badge bg-primary-color-600 z-10 border-none px-4 py-3 text-sm font-medium tracking-wide text-gray-900 shadow-md">
+        <span className="indicator-item indicator-center badge z-10 rounded-none border border-pink-300 bg-pink-50 px-4 py-4 text-lg font-medium tracking-wide text-pink-600 shadow-[0_4px_14px_0_rgba(244,114,182,0.39)] transition-all duration-500 ease-out group-hover:scale-120 group-hover:bg-pink-100 group-hover:shadow-[0_8px_24px_0_rgba(244,114,182,0.6)]">
           {badgeText}
         </span>
       )}
-      <div className="card bg-base-100 border-base-200 group h-full w-full overflow-hidden border shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="card bg-base-100 border-base-200 h-full w-full overflow-hidden border shadow-md transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-2xl">
         <figure className="overflow-hidden">
           <Image
             src={img}
