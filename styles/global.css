@@ -127,3 +127,13 @@
     background-size: 44% auto;
   }
 }
+
+.aura-hollow::before,
+.aura-hollow::after {
+  /* Create a mask that excludes the center (content-box) */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}

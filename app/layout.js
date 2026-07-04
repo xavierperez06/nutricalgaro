@@ -113,7 +113,7 @@ export default function RootLayout({ children }) {
         <div className="main">
           <div className="background" />
         </div>
-        <main className="app">{children}</main>
+        <main className="app overflow-x-hidden">{children}</main>
       </body>
     </html>
   );
