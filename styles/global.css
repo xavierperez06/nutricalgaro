@@ -100,10 +100,6 @@
   }
 }
 
-.hero-img {
-  background-image: url("/assets/images/Hero.webp");
-}
-
 .text-main-color {
   color: var(--color-primary-color-700);
 }

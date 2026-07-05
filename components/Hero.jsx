@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
+import Image from "next/image";
 import Button from "./common/Button";
 import AnimatedText from "./AnimatedText";
 
@@ -31,9 +32,23 @@ const Hero = ({ title, message }) => {
 
   return (
     <div
-      className="hero-img relative mb-12 flex h-screen items-start justify-end overflow-hidden bg-cover bg-fixed pt-24 md:items-center md:pt-0"
+      className="relative mb-12 flex h-screen items-start justify-end overflow-hidden pt-24 md:items-center md:pt-0"
       ref={ref}
     >
+      <div className="absolute inset-0 -z-10 [clip-path:inset(0)]">
+        <div className="fixed inset-0 h-screen w-full">
+          <Image
+            src="/assets/images/Hero.webp"
+            alt="Imágen Hero de fondo"
+            fill
+            priority
+            quality={85}
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+      </div>
+
       {/* Main Glassmorphism Card */}
       <div className="relative z-2 flex w-full justify-center lg:justify-end lg:pr-20">
         <div className="group flex max-w-[90%] flex-col items-center rounded-2xl border border-white/50 bg-white/55 p-4 text-center shadow-2xl backdrop-blur-md transition-all duration-500 hover:-translate-y-1 hover:bg-white/50 hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] lg:max-w-2xl xl:max-w-3xl xl:p-6 2xl:p-10">
