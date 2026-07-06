@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 
@@ -31,10 +30,8 @@ const Navbar = ({ isHome = false }) => {
   }, []);
 
   const handleScroll = (e, targetId) => {
-    // 1. Close mobile menu if it's open
     setNav(false);
 
-    // 2. If we are currently on the home page, take over the scroll behavior manually
     if (window.location.pathname === "/") {
       e.preventDefault();
 

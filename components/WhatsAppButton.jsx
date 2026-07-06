@@ -8,15 +8,12 @@ const WhatsAppButton = () => {
   const [open, setOpen] = useState(false);
   const [closing, setClosing] = useState(false);
   const [showHint, setShowHint] = useState(true);
-
-  // NEW: State to control the typing indicator
   const [isTyping, setIsTyping] = useState(true);
 
-  // NEW: Effect to switch from typing to text after 2.5 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsTyping(false);
-    }, 2500); // 2500ms = 2.5 seconds. Adjust as needed.
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -78,18 +75,13 @@ const WhatsAppButton = () => {
               ) : (
                 "¿Conversamos? 😄"
               )}
-
-              {/* Downward pointing tail */}
               <div className="absolute right-6 -bottom-[8px] h-0 w-0 border-t-[8px] border-r-[8px] border-l-[8px] border-t-white border-r-transparent border-l-transparent"></div>
             </div>
           </div>
         )}
 
-        {/* Button Container */}
         <div className="relative mt-1">
-          {/* Ripple Background */}
           <div className="animate-ping-slow absolute inset-0 rounded-full bg-[#25D366] opacity-30"></div>
-
           {/* Main Button */}
           <div className="indicator relative z-10">
             <span className="badge indicator-item animate-occasional-jump z-11 h-6 w-6 translate-x-1 -translate-y-1 rounded-full border-0 bg-red-500 text-white">

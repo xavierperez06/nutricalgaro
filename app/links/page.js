@@ -4,7 +4,7 @@ import ConsultasImage1 from "@/public/assets/images/Consultas_Pic01.webp";
 import NextImage from "next/image";
 
 const Links = () => {
-  const message = "Hola Belén, me gustaría consultar por un turno.";
+  const message = "Hola, quiero agendar una consulta.";
   const whatsappUrl = `https://wa.me/5493416757952?text=${encodeURIComponent(message)}`;
 
   const cards = [
@@ -41,7 +41,7 @@ const Links = () => {
         />
         <h1 className="text-3xl font-bold tracking-wider text-white">
           María Belén Calgaro
-          <div className="text-2xl font-normal text-white">
+          <div className="text-xl font-normal text-white md:text-2xl">
             Licenciada en Nutrición. MP 1284
           </div>
         </h1>
