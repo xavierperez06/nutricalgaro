@@ -39,7 +39,7 @@ const Hero = ({ title, message }) => {
         <div className="fixed inset-0 h-screen w-full">
           <Image
             src="/assets/images/Hero.webp"
-            alt="Imágen Hero de fondo"
+            alt="Imágen Hero de fondo - Nutricionista en Rosario María Belén Calgaro"
             fill
             priority
             quality={85}

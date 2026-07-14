@@ -4,8 +4,13 @@ import SectionHeader from "@/components/SectionHeader";
 import Button from "@/components/common/Button";
 import HighlightImage from "@/components/common/HighlightImage";
 
-// 1. We extract the repeating data into a clean array outside the component
-// to prevent it from being recreated on every render.
+export const metadata = {
+  title: "Sobre mí | Nutricionista María Belén Calgaro",
+  alternates: {
+    canonical: "/sobre-mi",
+  },
+};
+
 const historyData = [
   {
     id: "investigacion",

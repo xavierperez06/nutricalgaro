@@ -2,8 +2,9 @@ import ServiceContent from "@/components/ServiceContent";
 import ImageRecetarios from "@/public/assets/images/Recetas_Card.webp";
 
 export const metadata = {
-  title: {
-    absolute: "Recetarios | Nutricionista María Belén Calgaro",
+  title: "Recetarios | Nutricionista María Belén Calgaro",
+  alternates: {
+    canonical: "/recetarios",
   },
 };
 

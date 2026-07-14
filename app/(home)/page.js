@@ -6,6 +6,12 @@ import ReviewSlider from "@/components/ReviewSlider";
 import { reviews, services } from "@/constants";
 import Button from "@/components/common/Button";
 
+export const metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Home() {
   return (
     <div className="overflow-hidden">

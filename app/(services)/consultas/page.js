@@ -5,8 +5,9 @@ import ConsultasImage1 from "@/public/assets/images/Consultas_Pic01.webp";
 import ConsultasImage2 from "@/public/assets/images/Consultas_Pic02.webp";
 
 export const metadata = {
-  title: {
-    absolute: "Consultas | Nutricionista María Belén Calgaro",
+  title: "Consultas | Nutricionista María Belén Calgaro",
+  alternates: {
+    canonical: "/consultas",
   },
 };
 

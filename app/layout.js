@@ -101,7 +101,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" data-theme="light">
       <head>
-        <link rel="canonical" href="https://www.nutricalgaro.com.ar/" />
         <link rel="icon" href="/favicon.ico" />
         <script
           type="application/ld+json"
