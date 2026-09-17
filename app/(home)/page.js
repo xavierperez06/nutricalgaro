@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Hero
-        title="Nutrición integrativa para mejorar tu salud hormonal y digestiva desde hábitos sostenibles"
+        title="Nutrición integrativa para mejorar tu salud hormonal y digestiva desde hábitos de autocuidado"
         highlightedText="Nutrición integrativa"
-        message={`Te acompaño a identificar y construir hábitos de alimentación y estilo de vida sostenibles, adaptados a tu realidad y respaldados por la evidencia científica.\nMejorar tu salud digestiva y hormonal puede tener un impacto positivo en tu bienestar general y tu salud reproductiva.`}
+        message={`Te acompaño a reeducar y construir hábitos de alimentación y estilo de vida partiendo de tu realidad.\nMejorar tu salud digestiva y hormonal puede tener un impacto significativo en tu bienestar general y tu salud reproductiva.`}
       />
       <div className="yello-bg flex flex-col items-center justify-center self-center text-center">
         <AboutMe />
@@ -27,7 +27,7 @@ export default function Home() {
           className="mb-20 max-w-(--breakpoint-xl) scroll-mt-18 items-center"
         >
           <div className="mb-2 flex flex-col items-center justify-center px-4">
-            <h2 className="text-main-color mt-5 mb-5 text-center text-4xl font-bold md:text-5xl">
+            <h2 className="text-main-color mt-5 mb-5 text-center text-4xl font-bold lg:text-5xl">
               ¿Cómo puedo ayudarte?
             </h2>
             <div className="mx-auto flex max-w-3xl items-center justify-center gap-6 py-4">
@@ -41,7 +41,7 @@ export default function Home() {
               <div className="hidden h-[2px] flex-1 rounded-full bg-gradient-to-l from-transparent to-[#FAE48D] md:block"></div>
             </div>
           </div>
-          <div className="mt-4 grid grid-cols-1 items-center justify-center gap-6 px-4 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-4 grid grid-cols-1 gap-4 px-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             {services.map((service) => {
               return (
                 <Card

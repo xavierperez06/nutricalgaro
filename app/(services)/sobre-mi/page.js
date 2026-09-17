@@ -150,9 +150,10 @@ const historyData = [
       <>
         En paralelo, me especialicé en{" "}
         <span className="font-semibold">salud digestiva</span>, acompañando a
-        personas con trastornos funcionales digestivos, intolerancias
-        alimentarias y otras afecciones relacionadas con el sistema digestivo.
-        En esta área cuento con formación específica como {""}
+        personas con trastornos de la interacción intestino-cerebro,
+        intolerancias alimentarias y otras afecciones relacionadas con el
+        sistema digestivo. En esta área cuento con formación específica como{" "}
+        {""}
         <span className="font-semibold">
           Diplomada en Nutrición Digesto-Absortiva
         </span>

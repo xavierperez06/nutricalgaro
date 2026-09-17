@@ -7,7 +7,7 @@ const OpenModalButton = ({ modalId, variant, children }) => {
     <Button
       onClick={() => document.getElementById(modalId).showModal()}
       variant={variant}
-      className="cursor-pointer"
+      className="w-full cursor-pointer xl:w-auto"
     >
       {children}
     </Button>

@@ -5,12 +5,11 @@ const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default:
-      "Nutricionista en Rosario | Salud hormonal, digestiva y hábitos sostenibles | María Belén Calgaro",
+    default: "Salud hormonal y digestiva | María Belén Calgaro",
     template: "%s | Nutricalgaro",
   },
   description:
-    "Nutricionista en Rosario especializada en salud hormonal femenina, salud digestiva y cambios de hábitos. Atención presencial y online con un enfoque integrativo basado en evidencia científica.",
+    "Nutricionista integrativa en Rosario. Salud hormonal, digestiva y cambio de hábitos. Atención presencial y online con evidencia científica.",
   keywords: [
     "nutricionista Rosario",
     "nutricionista online",

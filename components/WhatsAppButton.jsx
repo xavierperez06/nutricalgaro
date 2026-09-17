@@ -73,7 +73,7 @@ const WhatsAppButton = () => {
                   ></div>
                 </div>
               ) : (
-                "¿Conversamos? 😄"
+                "¿Conversamos? 💛"
               )}
               <div className="absolute right-6 -bottom-[8px] h-0 w-0 border-t-[8px] border-r-[8px] border-l-[8px] border-t-white border-r-transparent border-l-transparent"></div>
             </div>

@@ -22,17 +22,15 @@ const Card = ({
             alt={title}
             width={400}
             height={300}
-            className="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+            className="h-40 w-full object-cover transition-transform duration-500 group-hover:scale-110 lg:h-48"
           />
         </figure>
 
-        <div className="card-body text-content flex flex-col">
-          <h2 className="card-title group-hover:text-primary-color-700 text-2xl font-bold transition-colors duration-300">
+        <div className="card-body text-content flex flex-col p-5 lg:p-6">
+          <h2 className="card-title group-hover:text-primary-color-700 font-bold transition-colors duration-300 lg:text-2xl">
             {title}
           </h2>
-
           <p className="flex-grow pt-2 text-left opacity-80">{description}</p>
-
           <div
             className={`card-actions mt-auto ${secondaryAction ? "justify-between" : "justify-end"} pt-4`}
           >

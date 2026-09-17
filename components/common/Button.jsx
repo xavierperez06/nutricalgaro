@@ -1,4 +1,8 @@
 import Link from "next/link";
+import { clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+const cn = (...inputs) => twMerge(clsx(inputs));
 
 const Button = ({
   href,
@@ -20,7 +24,8 @@ const Button = ({
       "bg-transparent text-primary-color-700 ring-1 ring-inset ring-primary-color-300 px-6 py-2.5 text-lg font-semibold hover:bg-primary-color-200 hover:text-primary-color-900 hover:ring-primary-color-400",
   };
 
-  const combinedClasses = `${baseStyles} ${variants[variant]} ${className}`;
+  // cn() ensures passed classes cleanly override the variant defaults
+  const combinedClasses = cn(baseStyles, variants[variant], className);
 
   const isExternal = typeof href === "string" && href.startsWith("http");
 
