@@ -46,8 +46,14 @@ const Links = () => {
           </div>
         </h1>
         <h2 className="mb-4 text-center text-xl tracking-wider text-gray-500">
-          Acompaño a adoptar hábitos de autocuidado. Mi área de mayor
-          experiencia es la salud hormonal femenina y la salud digestiva.{" "}
+          Acompaño a adoptar{" "}
+          <span className="font-semibold">hábitos de autocuidado</span> con
+          <span className="font-semibold">con enfoque integral</span>.
+          Trabajamos juntas para{" "}
+          <span className="font-semibold">
+            recuperar tu salud digestiva y hormonal desde la raíz.
+          </span>{" "}
+          Evidencia científica y bienestar real.
         </h2>
         <span className="mb-4 inline-block rounded-full border border-pink-700 bg-pink-700/10 px-3 py-1 text-lg font-bold tracking-widest text-pink-700 uppercase">
           ¿Cómo puedo ayudarte?
