@@ -76,7 +76,7 @@ const Contact = () => {
         <p className="text-lg leading-relaxed text-slate-600">
           Si tenés <span className="font-bold">dudas</span>, necesitás{" "}
           <span className="font-bold">asesoramiento personalizado</span> o
-          queres <span className="font-bold">agendar una consulta</span>, podés
+          querés <span className="font-bold">agendar una consulta</span>, podés
           contactarme por el medio que te resulte más cómodo.
         </p>
       </div>

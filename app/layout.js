@@ -9,7 +9,7 @@ export const metadata = {
     template: "%s | Nutricalgaro",
   },
   description:
-    "Nutricionista integrativa en Rosario. Salud hormonal, digestiva y cambio de hábitos. Atención presencial y online con evidencia científica.",
+    "Nutricionista integrativa en Rosario. Salud hormonal, digestiva y cambio de hábitos. Atención presencial y online. Evidencia científica y bienestar real.",
   keywords: [
     "nutricionista Rosario",
     "nutricionista online",
