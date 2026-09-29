@@ -47,9 +47,9 @@ const Links = () => {
         </h1>
         <h2 className="mb-4 text-center text-xl tracking-wider text-gray-500">
           Acompaño a adoptar{" "}
-          <span className="font-semibold">hábitos de autocuidado</span> con
-          <span className="font-semibold">con enfoque integral</span>.
-          Trabajamos juntas para{" "}
+          <span className="font-semibold">hábitos de autocuidado</span> con{" "}
+          <span className="font-semibold">enfoque integral</span>. Trabajamos
+          juntas para{" "}
           <span className="font-semibold">
             recuperar tu salud digestiva y hormonal desde la raíz.
           </span>{" "}
